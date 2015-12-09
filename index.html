@@ -68,6 +68,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-port-forwarding" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/port-forwarding/" class="article-date">
+  <time datetime="2015-12-09T10:51:30.000Z" itemprop="datePublished">2015-12-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/port-forwarding/">用阿里云的免费主机转发任意端口</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范</p>
+<p>首先 来到TAE的控制台<br><img src="https://dn-4679kun.qbox.me/port/Screenshot_20151209-182822.png" alt="1"> </p>
+<p>点击配置管理<br><img src="https://dn-4679kun.qbox.me/port/Screenshot_20151209-182847.png" alt="2"> </p>
+<p>添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行</p>
+<p>之后进入WebSSH</p>
+<p>我们用到的软件是rinetd 简单好用</p>
+<p>首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install screen</span><br></pre></td></tr></table></figure>
+<p>然后下载解压编译rinetd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget http://www.boutell.com/rinetd/http/rinetd.tar.gz</span><br><span class="line">tar zxvf rinetd.tar.gz</span><br><span class="line"><span class="built_in">cd</span> rinetd</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<p>编辑配置文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/rinetd.conf</span><br></pre></td></tr></table></figure></p>
+<p>vim的用法我就不说了 网上都有</p>
+<p>填入<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.0.0.0 &#21018;&#25165;&#28155;&#21152;&#30340;&#31471;&#21475;&#21495; VPS&#30340;IP 22</span><br></pre></td></tr></table></figure></p>
+<p>然后开启screen 启动rinetd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">screen</span><br><span class="line">rinetd -c /etc/rinetd.conf</span><br></pre></td></tr></table></figure></p>
+<p>这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行</p>
+<p>重启之后 之前开启的SS转发也被关了 再开启一遍就行</p>
+<p>这个方法可以用于转发任何端口</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://4679.space/port-forwarding/" data-id="cihyp7xp00006mwi42btgyllq" class="article-share-link">Share</a>
+      
+        <a href="https://4679.space/port-forwarding/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-mirror" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/mirror/" class="article-date">
@@ -96,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/mirror/" data-id="cihyjfn0000096li4rsqrg0mw" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/mirror/" data-id="cihyp7xp70009mwi4hvnnkfqj" class="article-share-link">Share</a>
       
         <a href="https://4679.space/mirror/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -137,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/h2o/" data-id="cihyjfn04000b6li4hkp22miu" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/h2o/" data-id="cihyp7xpd000bmwi4jw1yv52w" class="article-share-link">Share</a>
       
         <a href="https://4679.space/h2o/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -187,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/lets-encrypt/" data-id="cihyjfn02000a6li4bhb41nrx" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/lets-encrypt/" data-id="cihyp7xpb000amwi4ju68ozox" class="article-share-link">Share</a>
       
         <a href="https://4679.space/lets-encrypt/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -239,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/net-speeder/" data-id="cihyjfmzv00076li4dui89dab" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/net-speeder/" data-id="cihyp7xp10007mwi4qwcjv8vi" class="article-share-link">Share</a>
       
         <a href="https://4679.space/net-speeder/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -282,7 +336,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/ss-speedup/" data-id="cihyjfmzs00056li4twbaoa7b" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/ss-speedup/" data-id="cihyp7xow0004mwi4lsa00c3b" class="article-share-link">Share</a>
       
         <a href="https://4679.space/ss-speedup/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -321,7 +375,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/birthday/" data-id="cihyjfmyz00006li464xafggr" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/birthday/" data-id="cihyp7xpf000cmwi4h53k8cbb" class="article-share-link">Share</a>
       
         <a href="https://4679.space/birthday/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -372,7 +426,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/sign/" data-id="cihyjfmzu00066li406cmhx5h" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/sign/" data-id="cihyp7xoy0005mwi49g0c2kih" class="article-share-link">Share</a>
       
         <a href="https://4679.space/sign/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -411,7 +465,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/move-to-hexo/" data-id="cihyjfmzy00086li47ie6qcy9" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/move-to-hexo/" data-id="cihyp7xp40008mwi4co5rc72w" class="article-share-link">Share</a>
       
         <a href="https://4679.space/move-to-hexo/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -476,7 +530,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://4679.space/ss/" data-id="cihyjfmzp00046li4g4ucrv2q" class="article-share-link">Share</a>
+      <a data-url="https://4679.space/ss/" data-id="cihyp7xou0003mwi453ezo8gm" class="article-share-link">Share</a>
       
         <a href="https://4679.space/ss/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -488,59 +542,10 @@
 
 
   
-    <article id="post-vps2arch" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/vps2arch/" class="article-date">
-  <time datetime="2015-11-05T15:19:11.000Z" itemprop="datePublished">2015-11-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/vps2arch/">用黑魔法把任意系统的vps变成Arch</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  作为一个有信仰的人 当然在哪都要用Arch vps也是 然而大部分vps提供商都不会有Arch这种“不稳定”的系统供我们选择 这怎么能忍<br>于是我找啊找 没想到真找到了办法</p>
-<p><a href="https://github.com/drizzt/vps2arch" target="_blank" rel="external">https://github.com/drizzt/vps2arch</a></p>
-<p>就是它 使用方法很简单</p>
-<p><strong>注意！这会清除vps上的所有数据</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://git.io/vps2arch</span><br><span class="line">chmod +x vps2arch</span><br><span class="line">su</span><br><span class="line">./vps2arch</span><br></pre></td></tr></table></figure>
-<p>就这四条命令 经过一小会等待之后 安装就完成了</p>
-<p>然后配置好软件源 执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync ; reboot <span class="operator">-f</span></span><br></pre></td></tr></table></figure></p>
-<p>vps就会重启 然后再次连上ssh 就能享受Arch啦</p>
-<p>PS:</p>
-<pre><code>1. 不保证一切顺利
-2. 这是一份测试过的vps的列表 [这里][3] 我在CheapVZ的vps里也测试过了
-3. ipv6暂时还不能自动配置 有需要的请手动配置
-4. base-devel组不会自动安装 需要自己装
-5. 觉得棒的话 可以考虑捐助作者
-6. 没了
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://4679.space/vps2arch/" data-id="cihyjfmzn00036li46kid8vem" class="article-share-link">Share</a>
-      
-        <a href="https://4679.space/vps2arch/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </section>
         
