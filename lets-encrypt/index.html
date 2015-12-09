@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Let&#39;s Encrypt试用笔记 | 4679&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="昨天 也就是12月3日 Let’s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验
+首先 我们要获取Let’s Encrypt的客户端12git clone https://github.com/letsencrypt/letsencryptcd letsencrypt
+之后就可以签发证书了
+首先 获得root权">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Let's Encrypt试用笔记">
+<meta property="og:url" content="https://4679.space/lets-encrypt/index.html">
+<meta property="og:site_name" content="4679's Blog">
+<meta property="og:description" content="昨天 也就是12月3日 Let’s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验
+首先 我们要获取Let’s Encrypt的客户端12git clone https://github.com/letsencrypt/letsencryptcd letsencrypt
+之后就可以签发证书了
+首先 获得root权">
+<meta property="og:image" content="https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png">
+<meta property="og:image" content="https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg">
+<meta property="og:updated_time" content="2015-12-09T06:51:03.955Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Let's Encrypt试用笔记">
+<meta name="twitter:description" content="昨天 也就是12月3日 Let’s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验
+首先 我们要获取Let’s Encrypt的客户端12git clone https://github.com/letsencrypt/letsencryptcd letsencrypt
+之后就可以签发证书了
+首先 获得root权">
+<meta name="twitter:creator" content="@4679kun">
+<link rel="publisher" href="116109764244314780000">
+  
+    <link rel="alternative" href="/atom.xml" title="4679&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//fonts.lug.ustc.edu.cn/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">4679&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/friends">Friends</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://4679.space"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-lets-encrypt" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/lets-encrypt/" class="article-date">
+  <time datetime="2015-12-04T05:27:52.000Z" itemprop="datePublished">2015-12-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Let&#39;s Encrypt试用笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨天 也就是12月3日 Let’s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验</p>
+<p>首先 我们要获取Let’s Encrypt的客户端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/letsencrypt/letsencrypt</span><br><span class="line"><span class="built_in">cd</span> letsencrypt</span><br></pre></td></tr></table></figure></p>
+<p>之后就可以签发证书了</p>
+<p>首先 获得root权限<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su</span><br></pre></td></tr></table></figure></p>
+<p>之后 停掉占用了80和443端口的web服务器<br>这里取决于各位使用的操作系统与web服务器 我用的是Archlinux+Nginx<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop nginx</span><br></pre></td></tr></table></figure></p>
+<p>然后就是签发证书了 （不支持泛域名）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./letsencrypt-auto <span class="operator">-d</span> 你的域名 certonly</span><br></pre></td></tr></table></figure></p>
+<p>等待一阵过后 你的证书就在<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/letsencrypt/live/你的域名/</span><br></pre></td></tr></table></figure></p>
+<p>里面等着你了 赶快修改你的服务器配置文件来使用它吧</p>
+<p>最后上一张效果图<br><img src="https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png" alt="效果图"> </p>
+<p>PS:证书的有效期是3个月 记得续签哦</p>
+<p>感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！</p>
+<p>本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-)<br><img src="https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg" alt="BKC600"> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://4679.space/lets-encrypt/" data-id="cihygjytc000994i4o6jb4qy2" class="article-share-link">Share</a>
+      
+        <a href="https://4679.space/lets-encrypt/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/h2o/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          服务器后端切换到H2O
+        
+      </div>
+    </a>
+  
+  
+    <a href="/net-speeder/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">使用net-speeder缓解vps高延迟 高丢包率</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Copyleft 2015 4679kun</br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></br>
+      Hosted on <a href="https://www.cheapvz.com/" target="_blank">CheapVZ</a></br>
+      Thanks to <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a><br>
+      This site is licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-NC-SA 4.0</a></br>
+      <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5182445'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D5182445%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/friends" class="mobile-nav-link">Friends</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = '4679';
+  
+  var disqus_url = 'https://4679.space/lets-encrypt/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script type='text/javascript' src='https://dn-4679kun.qbox.me/script.js'></script>
+<script src="//cdn.bootcss.com/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+
+  </div>
+</body>
+</html>
