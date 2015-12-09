@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="https://4679.space/"/>
-  <updated>2015-12-09T06:51:03.972Z</updated>
+  <updated>2015-12-09T08:01:19.747Z</updated>
   <id>https://4679.space/</id>
   
   <author>
@@ -13,6 +13,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[给博客做了个镜像]]></title>
+    <link href="https://4679.space/mirror/"/>
+    <id>https://4679.space/mirror/</id>
+    <published>2015-12-09T07:56:05.000Z</published>
+    <updated>2015-12-09T08:01:19.747Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://4679kun.ml" target="_blank" rel="external">——–这里——–</a> </p>
+<p>双线解析 国内gitcafe 国外github 速度应该还不错<br>要是vps抽风的话 就访问这个吧</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://4679kun.ml" target="_blank" rel="external">——–这里——–</a> </p>
+<p>双线解析 国内gitcafe 国外github 速度应该还不错<br>要是vps抽风的话 就访问这个吧</p>
+]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[服务器后端切换到H2O]]></title>
