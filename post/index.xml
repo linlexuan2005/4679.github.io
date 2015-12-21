@@ -197,7 +197,7 @@ rinetd -c /etc/rinetd.conf
 
 &lt;p&gt;下面是我的配置文件 可以当个示范&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;access-log: /dev/null 
+&lt;pre&gt;&lt;code class=&#34;language-yml&#34;&gt;access-log: /dev/null 
 error-log: /dev/null 
 pid-file: /var/run/h2o.pid
 max-connections: 51200
