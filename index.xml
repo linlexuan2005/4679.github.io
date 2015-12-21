@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyleft - 2015</copyright>
-    <lastBuildDate>Mon, 21 Dec 2015 18:30:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2015 19:16:05 +0800</lastBuildDate>
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>一份简洁 优雅的vim配置</title>
+      <link>https://4679.space/vimrc/</link>
+      <pubDate>Mon, 21 Dec 2015 19:16:05 +0800</pubDate>
+      
+      <guid>https://4679.space/vimrc/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://github.com/4679/vimrc/&#34; alt=&#34;点我&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用心感受&lt;/p&gt;
+
+&lt;p&gt;如丝般顺滑 开箱即用 遵循KISS原则&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>迁移到Hugo</title>
@@ -664,46 +678,6 @@ backend ss-out
 &lt;p&gt;等待 安装完成后系统就会给出服务器的地址 端口 密码 加密方式 你就有属于自己的ss服务器了&lt;/p&gt;
 
 &lt;p&gt;完结撒花(＾o＾)ﾉ请原谅我全程没用一个标点&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>用黑魔法把任意系统的vps变成Arch</title>
-      <link>https://4679.space/vps2arch/</link>
-      <pubDate>Thu, 05 Nov 2015 23:19:11 +0800</pubDate>
-      
-      <guid>https://4679.space/vps2arch/</guid>
-      <description>&lt;p&gt;作为一个有信仰的人 当然在哪都要用Arch vps也是 然而大部分vps提供商都不会有Arch这种“不稳定”的系统供我们选择 这怎么能忍
-于是我找啊找 没想到真找到了办法&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/drizzt/vps2arch&#34;&gt;https://github.com/drizzt/vps2arch&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就是它 使用方法很简单&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;注意！这会清除vps上的所有数据&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget http://git.io/vps2arch
-chmod +x vps2arch
-su
-./vps2arch
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;就这四条命令 经过一小会等待之后 安装就完成了&lt;/p&gt;
-
-&lt;p&gt;然后配置好软件源 执行&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sync ; reboot -f
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;vps就会重启 然后再次连上ssh 就能享受Arch啦&lt;/p&gt;
-
-&lt;p&gt;PS:
-    1. 不保证一切顺利
-    2. 这是一份测试过的vps的列表 &lt;a href=&#34;https://github.com/drizzt/vps2arch/wiki/Tested-VPS-Providers&#34;&gt;这里&lt;/a&gt; 我在CheapVZ的vps里也测试过了
-    3. ipv6暂时还不能自动配置 有需要的请手动配置
-    4. base-devel组不会自动安装 需要自己装
-    5. 觉得棒的话 可以考虑捐助作者
-    6. 没了&lt;/p&gt;
 </description>
     </item>
     
