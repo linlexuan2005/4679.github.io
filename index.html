@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" 4679&#39;s Blog" />
+  	<meta property="og:site_name" content="4679&#39;s Blog" />
+  	<meta property="og:url" content="https://4679.space/" />
+
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     4679&#39;s Blog
+  </title>
+
+    <meta name="description" content=" " />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://4679.space/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://4679.space/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://dn-4679kun.qbox.me/hugo/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://dn-4679kun.qbox.me/hugo/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.lug.ustc.edu.cn/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+      
+        <link href="https://4679.space/index.xml" rel="alternate" type="application/rss+xml" title="4679&#39;s Blog" />
+      
+    
+    <meta name="generator" content="Hugo 0.15" />
+
+    <link rel="canonical" href="https://4679.space/" />
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/page/about/">About Me</a>
+            </li>
+        
+            
+            <li class="nav-opened nav-current" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/page/friends/">Friends</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/4679">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://weibo.com/u/1963942417">Weibo</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://4679.space/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.0.0/styles/docco.min.css"> 
+<script src="https://cdn.bootcss.com/highlight.js/9.0.0/highlight.min.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<header class="main-header " style="background-image: url(https://dn-4679kun.qbox.me/140656-106.jpg)">
+
+
+    <nav class="main-nav overlay clearfix">
+        
+            <a class="blog-logo" href="https://4679.space/"><img src="https://dn-4679kun.qbox.me/head.jpg" alt="Blog Logo" /></a>
+        
+        
+            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+        
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            
+                <a  href="https://github.com/4679">
+                <span class="icon-github" style="color:white;font-size:2em"></span>
+                </a>
+            
+            &nbsp;
+            
+                <a class="bloglogo" href="https://twitter.com/4679kun">
+                    <span class="icon-twitter" style="color:white;font-size:2em"></span>
+                </a>
+            
+            
+            
+            
+            
+
+            <h1 class="page-title">4679&#39;s Blog</h1>
+            <h2 class="page-description"> </h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
+<main id="content" class="content" role="main">
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+        
+            
+        
+    
+    
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 3</span>
+	
+	    <a class="older-posts" href="/page/2/">Older Posts &rarr;</a>
+	
+</nav>
+
+    </div>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/sslh/">利用sslh在同一个端口运行nginx openvpn xmpp ssh等服务</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>这有什么用呢？ 某些运营商或者学校可能屏蔽了一些服务的默认端口 比如屏蔽了22端口 你就只能把ssh的监听端口改成其他的 要是更变态 开启了白名单模式呢 那样就只能通过某些端口访问了 443就是其中一个 正常人一般不会屏蔽它 但是如果通过22端口访问vps的话 启用了TLS的http服务器怎么办呢 这时候就要用到sslh了 sslh的原理很简单 通过分析数据包的特征辨别是什么协议的访问 把对同一端口不同协议的访问分流到不同的端口上 首先是安装 对于Archlinux用户 yaourt -S sslh 通用方法 (我没测试) #首先安装依赖 #Debian apt-get install -y libwrap0-dev libconfig8-dev #RPM系 yum install libconfig libconfig-devel #获取源码 git clone https://github.com/yrutschle/sslh cd sslh #编译 make #安装（Debian） make install cp scripts/etc.init.d.sslh /etc/init.d/sslh update-rc.d sslh defaults #安装（CentOS） make install cp scripts/etc.rc.d.init.d.sslh.centos /etc/rc.d/init.d/sslh 之后修改位于/etc/sslh.conf或者/etc/sslh.cfg的配置文件 以下是我的 也是Arch的默认配置 # Default Arch configuration # You can find more examples <a class="read-more" href="/sslh/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/vps/">#vps</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-16T21:29:18&#43;08:00">
+            16 Dec 2015
+        </time>
+    </footer>
+</article>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/port-forwarding/">用阿里云的免费主机转发任意端口</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>title: 用阿里云的免费主机转发任意端口 date: 2015-12-09 18:51:30 tags: 上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范 首先 来到TAE的控制台 点击配置管理 添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行 之后进入WebSSH 我们用到的软件是rinetd 简单好用 首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死 yum install screen 然后下载解压编译rinetd wget http://www.boutell.com/rinetd/http/rinetd.tar.gz tar zxvf rinetd.tar.gz cd rinetd make make install 编辑配置文件 vim /etc/rinetd.conf vim的用法我就不说了 网上都有 填入 0.0.0.0 刚才添加的端口号 VPS的IP 22 然后开启screen 启动rinetd screen rinetd -c /etc/rinetd.conf 这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行 重启之后 之前开启的SS转发也被关了 再开启一遍就行 这个方法可以用于转发任何端口 <a class="read-more" href="/port-forwarding/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/tech/">#tech</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-09T18:51:30&#43;08:00">
+            9 Dec 2015
+        </time>
+    </footer>
+</article>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/mirror/">给博客做了个镜像</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>&mdash;&mdash;&ndash;这里&mdash;&mdash;&ndash; 放在github 速度应该还不错 要是vps抽风的话 就访问这个吧 <a class="read-more" href="/mirror/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/blog/">#blog</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-09T15:56:05&#43;08:00">
+            9 Dec 2015
+        </time>
+    </footer>
+</article>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/h2o/">服务器后端切换到H2O</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2 Archlinux用户直接从AUR安装就可以了 其他系统请自行寻找源或者编译安装 下面是我的配置文件 可以当个示范 access-log: /dev/null error-log: /dev/null pid-file: /var/run/h2o.pid max-connections: 51200 file.send-gzip: ON tcp-fastopen: 3 user: www http2-reprioritize-blocking-assets: ON file.index: [ 'index.php', 'index.html' ] file.mime.addtypes: text/html: .html .htm .shtml text/css: .css text/xml: .xml image/gif: .gif image/jpeg: .jpeg .jpg application/javascript: .js application/atom+xml: .atom application/rss+xml: .rss text/mathml: .mml text/plain: .txt text/vnd.sun.j2me.app-descriptor: .jad text/vnd.wap.wml: .wml text/x-component: .htc image/png: .png image/tiff: .tif .tiff image/vnd.wap.wbmp: .wbmp image/x-icon: .ico image/x-jng: .jng image/x-ms-bmp: <a class="read-more" href="/h2o/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/blog/">#blog</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-05T12:20:53&#43;08:00">
+            5 Dec 2015
+        </time>
+    </footer>
+</article>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/lets-encrypt/">Let&#39;s Encrypt试用笔记</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>昨天 也就是12月3日 Let&rsquo;s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验 首先 我们要获取Let&rsquo;s Encrypt的客户端 git clone https://github.com/letsencrypt/letsencrypt cd letsencrypt 之后就可以签发证书了 首先 获得root权限 su 之后 停掉占用了80和443端口的web服务器 这里取决于各位使用的操作系统与web服务器 我用的是Archlinux+Nginx systemctl stop nginx 然后就是签发证书了 （不支持泛域名） ./letsencrypt-auto -d 你的域名 certonly 等待一阵过后 你的证书就在 /etc/letsencrypt/live/你的域名/ 里面等着你了 赶快修改你的服务器配置文件来使用它吧 最后上一张效果图 PS:证书的有效期是3个月 记得续签哦 感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！ 本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-) <a class="read-more" href="/lets-encrypt/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/tech/">#tech</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-04T13:27:52&#43;08:00">
+            4 Dec 2015
+        </time>
+    </footer>
+</article>
+
+    
+
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 3</span>
+	
+	    <a class="older-posts" href="/page/2/">Older Posts &rarr;</a>
+	
+</nav>
+
+
+</main>
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"> Copyleft - 2015</br>Thanks to <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a></br><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5182445'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D5182445%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="https://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/4679/hugo-theme-casper">Casper</a> theme</br><a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a></section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://dn-4679kun.qbox.me/hugo/js/jquery.js"></script>
+    <script type="text/javascript" src="https://dn-4679kun.qbox.me/hugo/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://dn-4679kun.qbox.me/hugo/js/index.js"></script>
+    
+</body>
+</html>
+
