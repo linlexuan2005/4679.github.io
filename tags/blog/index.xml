@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyleft - 2015</copyright>
-    <lastBuildDate>Wed, 09 Dec 2015 15:56:05 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2015 18:30:19 +0800</lastBuildDate>
     <atom:link href="https://4679.space/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>迁移到Hugo</title>
+      <link>https://4679.space/move-to-hugo/</link>
+      <pubDate>Mon, 21 Dec 2015 18:30:19 +0800</pubDate>
+      
+      <guid>https://4679.space/move-to-hugo/</guid>
+      <description>&lt;p&gt;第二次迁移博客了 这次迁移到了Hugo 一款用go语言编写的静态博客生成器 优点是效率比Hexo高太多 之前每次生成博客需要两三秒 现在只用1秒不到 不过目前还没有用于Hexo的迁移方案 全是我手动迁移的 累死了(´_ゝ`)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>给博客做了个镜像</title>

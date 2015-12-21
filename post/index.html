@@ -143,6 +143,34 @@
 	   
 <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/move-to-hugo/">迁移到Hugo</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>第二次迁移博客了 这次迁移到了Hugo 一款用go语言编写的静态博客生成器 优点是效率比Hexo高太多 之前每次生成博客需要两三秒 现在只用1秒不到 不过目前还没有用于Hexo的迁移方案 全是我手动迁移的 累死了(´_ゝ`) <a class="read-more" href="/move-to-hugo/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/blog/">#blog</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-21T18:30:19&#43;08:00">
+            21 Dec 2015
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/sslh/">利用sslh在同一个端口运行nginx openvpn xmpp ssh等服务</a></h2>
     </header>
     <section class="post-excerpt">
@@ -174,7 +202,7 @@
         <h2 class="post-title"><a href="/port-forwarding/">用阿里云的免费主机转发任意端口</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>title: 用阿里云的免费主机转发任意端口 date: 2015-12-09 18:51:30 tags: 上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范 首先 来到TAE的控制台 点击配置管理 添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行 之后进入WebSSH 我们用到的软件是rinetd 简单好用 首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死 yum install screen 然后下载解压编译rinetd wget http://www.boutell.com/rinetd/http/rinetd.tar.gz tar zxvf rinetd.tar.gz cd rinetd make make install 编辑配置文件 vim /etc/rinetd.conf vim的用法我就不说了 网上都有 填入 0.0.0.0 刚才添加的端口号 VPS的IP 22 然后开启screen 启动rinetd screen rinetd -c /etc/rinetd.conf 这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行 重启之后 之前开启的SS转发也被关了 再开启一遍就行 这个方法可以用于转发任何端口 <a class="read-more" href="/port-forwarding/">&raquo;</a></p>
+        <p>上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范 首先 来到TAE的控制台 点击配置管理 添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行 之后进入WebSSH 我们用到的软件是rinetd 简单好用 首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死 yum install screen 然后下载解压编译rinetd wget http://www.boutell.com/rinetd/http/rinetd.tar.gz tar zxvf rinetd.tar.gz cd rinetd make make install 编辑配置文件 vim /etc/rinetd.conf vim的用法我就不说了 网上都有 填入 0.0.0.0 刚才添加的端口号 VPS的IP 22 然后开启screen 启动rinetd screen rinetd -c /etc/rinetd.conf 这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行 重启之后 之前开启的SS转发也被关了 再开启一遍就行 这个方法可以用于转发任何端口 <a class="read-more" href="/port-forwarding/">&raquo;</a></p>
     </section>
     <footer class="post-meta">
         
@@ -247,34 +275,6 @@
         
         <time class="post-date" datetime="2015-12-05T12:20:53&#43;08:00">
             5 Dec 2015
-        </time>
-    </footer>
-</article>
-
-	
-	   
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/lets-encrypt/">Let&#39;s Encrypt试用笔记</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>昨天 也就是12月3日 Let&rsquo;s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验 首先 我们要获取Let&rsquo;s Encrypt的客户端 git clone https://github.com/letsencrypt/letsencrypt cd letsencrypt 之后就可以签发证书了 首先 获得root权限 su 之后 停掉占用了80和443端口的web服务器 这里取决于各位使用的操作系统与web服务器 我用的是Archlinux+Nginx systemctl stop nginx 然后就是签发证书了 （不支持泛域名） ./letsencrypt-auto -d 你的域名 certonly 等待一阵过后 你的证书就在 /etc/letsencrypt/live/你的域名/ 里面等着你了 赶快修改你的服务器配置文件来使用它吧 最后上一张效果图 PS:证书的有效期是3个月 记得续签哦 感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！ 本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-) <a class="read-more" href="/lets-encrypt/">&raquo;</a></p>
-    </section>
-    <footer class="post-meta">
-        
-        
-            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
-        
-        
-            4679kun
-        
-        on
-            
-                <a href="https://4679.space/tags/tech/">#tech</a>,
-            
-        
-        <time class="post-date" datetime="2015-12-04T13:27:52&#43;08:00">
-            4 Dec 2015
         </time>
     </footer>
 </article>

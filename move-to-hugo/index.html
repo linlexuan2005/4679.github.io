@@ -5,22 +5,22 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" 用阿里云的免费主机转发任意端口 &middot;  4679&#39;s Blog" />
+  	<meta property="og:title" content=" 迁移到Hugo &middot;  4679&#39;s Blog" />
   	<meta property="og:site_name" content="4679&#39;s Blog" />
-  	<meta property="og:url" content="https://4679.space/port-forwarding/" />
+  	<meta property="og:url" content="https://4679.space/move-to-hugo/" />
 
     
   	<meta property="og:type" content="article" />
 
-    <meta property="og:article:published_time" content="2015-12-09T18:51:30&#43;08:00" />
+    <meta property="og:article:published_time" content="2015-12-21T18:30:19&#43;08:00" />
 
     
-    <meta property="og:article:tag" content="tech" />
+    <meta property="og:article:tag" content="blog" />
     
     
 
   <title>
-     用阿里云的免费主机转发任意端口 &middot;  4679&#39;s Blog
+     迁移到Hugo &middot;  4679&#39;s Blog
   </title>
 
     <meta name="description" content=" " />
@@ -44,7 +44,7 @@
     
     <meta name="generator" content="Hugo 0.15" />
 
-    <link rel="canonical" href="https://4679.space/port-forwarding/" />
+    <link rel="canonical" href="https://4679.space/move-to-hugo/" />
 
     
 
@@ -132,73 +132,23 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">用阿里云的免费主机转发任意端口</h1>
+        <h1 class="post-title">迁移到Hugo</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2015-12-09T18:51:30&#43;08:00">
-            Dec 9, 2015
+          <time class="post-date" datetime="2015-12-21T18:30:19&#43;08:00">
+            Dec 21, 2015
           </time>
         
          
-          <span class="post-tag small"><a href="https://4679.space/tags/tech/">#tech</a></span>
+          <span class="post-tag small"><a href="https://4679.space/tags/blog/">#blog</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范</p>
-
-<p>首先 来到TAE的控制台
-<img src="https://dn-4679kun.qbox.me/port/Screenshot_20151209-182822.png" alt="1" /></p>
-
-<p>点击配置管理
-<img src="https://dn-4679kun.qbox.me/port/Screenshot_20151209-182847.png" alt="2" /></p>
-
-<p>添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行</p>
-
-<p>之后进入WebSSH</p>
-
-<p>我们用到的软件是rinetd 简单好用</p>
-
-<p>首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死</p>
-
-<pre><code class="language-bash">yum install screen
-</code></pre>
-
-<p>然后下载解压编译rinetd</p>
-
-<pre><code class="language-bash">wget http://www.boutell.com/rinetd/http/rinetd.tar.gz
-tar zxvf rinetd.tar.gz
-cd rinetd
-make
-make install
-</code></pre>
-
-<p>编辑配置文件</p>
-
-<pre><code class="language-bash">vim /etc/rinetd.conf
-</code></pre>
-
-<p>vim的用法我就不说了 网上都有</p>
-
-<p>填入</p>
-
-<pre><code class="language-cfg">0.0.0.0 刚才添加的端口号 VPS的IP 22
-</code></pre>
-
-<p>然后开启screen 启动rinetd</p>
-
-<pre><code class="language-bash">screen
-rinetd -c /etc/rinetd.conf
-</code></pre>
-
-<p>这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行</p>
-
-<p>重启之后 之前开启的SS转发也被关了 再开启一遍就行</p>
-
-<p>这个方法可以用于转发任何端口</p>
+      <p>第二次迁移博客了 这次迁移到了Hugo 一款用go语言编写的静态博客生成器 优点是效率比Hexo高太多 之前每次生成博客需要两三秒 现在只用1秒不到 不过目前还没有用于Hexo的迁移方案 全是我手动迁移的 累死了(´_ゝ`)</p>
 
     </section>
 
@@ -234,19 +184,19 @@ rinetd -c /etc/rinetd.conf
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e7%9a%84%e5%85%8d%e8%b4%b9%e4%b8%bb%e6%9c%ba%e8%bd%ac%e5%8f%91%e4%bb%bb%e6%84%8f%e7%ab%af%e5%8f%a3&amp;url=https%3a%2f%2f4679.space%2fport-forwarding%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e8%bf%81%e7%a7%bb%e5%88%b0Hugo&amp;url=https%3a%2f%2f4679.space%2fmove-to-hugo%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f4679.space%2fport-forwarding%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f4679.space%2fmove-to-hugo%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fport-forwarding%2f&amp;description=%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e7%9a%84%e5%85%8d%e8%b4%b9%e4%b8%bb%e6%9c%ba%e8%bd%ac%e5%8f%91%e4%bb%bb%e6%84%8f%e7%ab%af%e5%8f%a3"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fmove-to-hugo%2f&amp;description=%e8%bf%81%e7%a7%bb%e5%88%b0Hugo"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f4679.space%2fport-forwarding%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f4679.space%2fmove-to-hugo%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -259,7 +209,7 @@ rinetd -c /etc/rinetd.conf
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_shortname = '4679';
-  var disqus_url = 'https:\/\/4679.space\/port-forwarding\/';
+  var disqus_url = 'https:\/\/4679.space\/move-to-hugo\/';
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
