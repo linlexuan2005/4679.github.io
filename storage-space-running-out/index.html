@@ -5,22 +5,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" 服务器后端切换到H2O &middot;  4679&#39;s Blog" />
+  	<meta property="og:title" content=" storage space running out &middot;  4679&#39;s Blog" />
   	<meta property="og:site_name" content="4679&#39;s Blog" />
-  	<meta property="og:url" content="https://4679.space/h2o/" />
+  	<meta property="og:url" content="https://4679.space/storage-space-running-out/" />
 
     
   	<meta property="og:type" content="article" />
 
-    <meta property="og:article:published_time" content="2015-12-05T12:20:53&#43;08:00" />
+    <meta property="og:article:published_time" content="2015-12-22T18:32:31&#43;08:00" />
 
     
-    <meta property="og:article:tag" content="blog" />
+    <meta property="og:article:tag" content="tag1" />
+    
+    <meta property="og:article:tag" content="tag2" />
     
     
 
   <title>
-     服务器后端切换到H2O &middot;  4679&#39;s Blog
+     storage space running out &middot;  4679&#39;s Blog
   </title>
 
     <meta name="description" content=" " />
@@ -44,7 +46,7 @@
     
     <meta name="generator" content="Hugo 0.15" />
 
-    <link rel="canonical" href="https://4679.space/h2o/" />
+    <link rel="canonical" href="https://4679.space/storage-space-running-out/" />
 
     
 
@@ -132,156 +134,25 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">服务器后端切换到H2O</h1>
+        <h1 class="post-title">storage space running out</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2015-12-05T12:20:53&#43;08:00">
-            Dec 5, 2015
+          <time class="post-date" datetime="2015-12-22T18:32:31&#43;08:00">
+            Dec 22, 2015
           </time>
         
          
-          <span class="post-tag small"><a href="https://4679.space/tags/blog/">#blog</a></span>
+          <span class="post-tag small"><a href="https://4679.space/tags/tag1/">#tag1</a></span>
+         
+          <span class="post-tag small"><a href="https://4679.space/tags/tag2/">#tag2</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      <p>H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2</p>
-
-<p>Archlinux用户直接从AUR安装就可以了
-其他系统请自行寻找源或者编译安装</p>
-
-<p>下面是我的配置文件 可以当个示范</p>
-
-<pre><code class="language-YAML">access-log: /dev/null 
-error-log: /dev/null 
-pid-file: /var/run/h2o.pid
-max-connections: 51200
-file.send-gzip: ON 
-tcp-fastopen: 3 
-user: www
-http2-reprioritize-blocking-assets: ON 
-file.index: [ 'index.php', 'index.html' ]
-file.mime.addtypes: 
-    text/html: .html .htm .shtml
-    text/css: .css
-    text/xml: .xml
-    image/gif: .gif
-    image/jpeg: .jpeg .jpg
-    application/javascript: .js
-    application/atom+xml: .atom
-    application/rss+xml: .rss
-
-    text/mathml: .mml
-    text/plain: .txt
-    text/vnd.sun.j2me.app-descriptor: .jad
-    text/vnd.wap.wml: .wml
-    text/x-component: .htc
-
-    image/png: .png
-    image/tiff: .tif .tiff
-    image/vnd.wap.wbmp: .wbmp
-    image/x-icon: .ico
-    image/x-jng: .jng
-    image/x-ms-bmp: .bmp
-    image/svg+xml: .svg .svgz
-    image/webp: .webp
-
-    application/font-woff: .woff
-    application/java-archive: .jar .war .ear
-    application/json: .json
-    application/mac-binhex40: .hqx
-    application/msword: .doc
-    application/pdf: .pdf
-    application/postscript: .ps .eps .ai
-    application/rtf: .rtf
-    application/vnd.apple.mpegurl: .m3u8
-    application/vnd.ms-excel: .xls
-    application/vnd.ms-fontobject: .eot
-    application/vnd.ms-powerpoint: .ppt
-    application/vnd.wap.wmlc: .wmlc
-    application/vnd.google-earth.kml+xml: .kml
-    application/vnd.google-earth.kmz: .kmz
-    application/x-7z-compressed: .7z
-    application/x-cocoa: .cco
-    application/x-java-archive-diff: .jardiff
-    application/x-java-jnlp-file: .jnlp
-    application/x-makeself: .run
-    application/x-perl: .pl .pm
-    application/x-pilot: .prc .pdb
-    application/x-rar-compressed: .rar
-    application/x-redhat-package-manager: .rpm
-    application/x-sea: .sea
-    application/x-shockwave-flash: .swf
-    application/x-stuffit: .sit
-    application/x-tcl: .tcl .tk
-    application/x-x509-ca-cert: .der .pem .crt
-    application/x-xpinstall: .xpi
-    application/xhtml+xml: .xhtml
-    application/xspf+xml: .xspf
-    application/zip: .zip
-
-    application/octet-stream: .bin .exe .dll
-    application/octet-stream: .deb
-    application/octet-stream: .dmg
-    application/octet-stream: .iso .img
-    application/octet-stream: .msi .msp .msm
-
-    application/vnd.openxmlformats-officedocument.wordprocessingml.document: .docx
-    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: .xlsx
-    application/vnd.openxmlformats-officedocument.presentationml.presentation: .pptx
-
-    audio/midi: .mid .midi .kar
-    audio/mpeg: .mp3
-    audio/ogg: .ogg
-    audio/x-m4a: .m4a
-    audio/x-realaudio: .ra
-
-    video/3gpp: .3gpp .3gp
-    video/mp2t: .ts
-    video/mp4: .mp4
-    video/mpeg: .mpeg .mpg
-    video/quicktime: .mov
-    video/webm: .webm
-    video/x-flv: .flv
-    video/x-m4v: .m4v
-    video/x-mng: .mng
-    video/x-ms-asf: .asx .asf
-    video/x-ms-wmv: .wmv
-    video/x-msvideo: .avi
-
-hosts:
-  &quot;4679.space:443&quot;: 
-    header.add: &quot;strict-transport-security: max-age=39420000; includesubdomains; preload&quot; 
-    header.add: &quot;X-Frame-Options: SAMEORIGIN&quot;
-    header.add: &quot;X-Content-Type-Options: nosniff&quot;
-    header.add: &quot;X-XSS-Protection: 1; mode=block&quot;
-    listen:
-      port: 443
-      ssl:
-        certificate-file: /etc/letsencrypt/live/4679.space/fullchain.pem
-        key-file: /etc/letsencrypt/live/4679.space/privkey.pem
-        dh-file: /etc/ssl/certs/dhparam2048.pem
-        minimum-version: TLSv1
-        cipher-preference: server
-        cipher-suite: CHACHA20 EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS !RC4
-    paths:
-      /:
-        file.dir: /home/www/
-
-  &quot;4679.space:80&quot;:
-    listen:
-      port: 80
-    paths:
-      /:
-        redirect:
-          status: 301
-          url: &quot;https://4679.space/&quot;
-
-</code></pre>
-
+      
     </section>
 
 
@@ -316,19 +187,19 @@ hosts:
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%90%8e%e7%ab%af%e5%88%87%e6%8d%a2%e5%88%b0H2O&amp;url=https%3a%2f%2f4679.space%2fh2o%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=storage%20space%20running%20out&amp;url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f4679.space%2fh2o%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fh2o%2f&amp;description=%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%90%8e%e7%ab%af%e5%88%87%e6%8d%a2%e5%88%b0H2O"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f&amp;description=storage%20space%20running%20out"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f4679.space%2fh2o%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -341,7 +212,7 @@ hosts:
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_shortname = '4679';
-  var disqus_url = 'https:\/\/4679.space\/h2o\/';
+  var disqus_url = 'https:\/\/4679.space\/storage-space-running-out\/';
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
