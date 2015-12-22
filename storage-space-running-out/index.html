@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" storage space running out &middot;  4679&#39;s Blog" />
+  	<meta property="og:title" content=" 干掉安卓烦人的 存储空间不足 的通知 &middot;  4679&#39;s Blog" />
   	<meta property="og:site_name" content="4679&#39;s Blog" />
   	<meta property="og:url" content="https://4679.space/storage-space-running-out/" />
 
@@ -15,14 +15,12 @@
     <meta property="og:article:published_time" content="2015-12-22T18:32:31&#43;08:00" />
 
     
-    <meta property="og:article:tag" content="tag1" />
-    
-    <meta property="og:article:tag" content="tag2" />
+    <meta property="og:article:tag" content="tech" />
     
     
 
   <title>
-     storage space running out &middot;  4679&#39;s Blog
+     干掉安卓烦人的 存储空间不足 的通知 &middot;  4679&#39;s Blog
   </title>
 
     <meta name="description" content=" " />
@@ -134,7 +132,7 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">storage space running out</h1>
+        <h1 class="post-title">干掉安卓烦人的 存储空间不足 的通知</h1>
         <small></small>
 
         <section class="post-meta">
@@ -144,15 +142,42 @@
           </time>
         
          
-          <span class="post-tag small"><a href="https://4679.space/tags/tag1/">#tag1</a></span>
-         
-          <span class="post-tag small"><a href="https://4679.space/tags/tag2/">#tag2</a></span>
+          <span class="post-tag small"><a href="https://4679.space/tags/tech/">#tech</a></span>
          
         </section>
     </header>
 
     <section class="post-content">
-      
+      <p>这个通知真是太烦人了 于是干掉他</p>
+
+<p><strong><em>需要ROOT权限</em></strong></p>
+
+<p>安卓5.x及以下</p>
+
+<ul>
+<li>下载SQLite编辑器</li>
+</ul>
+
+<pre><code> 打开 /data/data/com.android.providers.settings/databases/settings.db
+ 打开 secure
+ 编辑 sys_storage_threshold_percentage的值 改为0
+ 重启
+</code></pre>
+
+<p>安卓6.x</p>
+
+<ul>
+<li>下载终端模拟器 或者直接用adb shell</li>
+</ul>
+
+<pre><code>  执行
+  su
+  settings put global sys_storage_threshold_percentage 0
+  重启
+</code></pre>
+
+<p>原理就是 这个值控制空间不足多少时提示空间不足 默认是10 也就是空间不足10%的时候提示 把它修改成0 就没有提示了</p>
+
     </section>
 
 
@@ -187,7 +212,7 @@
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=storage%20space%20running%20out&amp;url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=%e5%b9%b2%e6%8e%89%e5%ae%89%e5%8d%93%e7%83%a6%e4%ba%ba%e7%9a%84%20%e5%ad%98%e5%82%a8%e7%a9%ba%e9%97%b4%e4%b8%8d%e8%b6%b3%20%e7%9a%84%e9%80%9a%e7%9f%a5&amp;url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
@@ -195,7 +220,7 @@
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f&amp;description=storage%20space%20running%20out"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2f4679.space%2fstorage-space-running-out%2f&amp;description=%e5%b9%b2%e6%8e%89%e5%ae%89%e5%8d%93%e7%83%a6%e4%ba%ba%e7%9a%84%20%e5%ad%98%e5%82%a8%e7%a9%ba%e9%97%b4%e4%b8%8d%e8%b6%b3%20%e7%9a%84%e9%80%9a%e7%9f%a5"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>

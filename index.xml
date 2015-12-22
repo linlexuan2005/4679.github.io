@@ -11,12 +11,41 @@
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>storage space running out</title>
+      <title>干掉安卓烦人的 存储空间不足 的通知</title>
       <link>https://4679.space/storage-space-running-out/</link>
       <pubDate>Tue, 22 Dec 2015 18:32:31 +0800</pubDate>
       
       <guid>https://4679.space/storage-space-running-out/</guid>
-      <description></description>
+      <description>&lt;p&gt;这个通知真是太烦人了 于是干掉他&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;需要ROOT权限&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;安卓5.x及以下&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;下载SQLite编辑器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; 打开 /data/data/com.android.providers.settings/databases/settings.db
+ 打开 secure
+ 编辑 sys_storage_threshold_percentage的值 改为0
+ 重启
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;安卓6.x&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;下载终端模拟器 或者直接用adb shell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;  执行
+  su
+  settings put global sys_storage_threshold_percentage 0
+  重启
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;原理就是 这个值控制空间不足多少时提示空间不足 默认是10 也就是空间不足10%的时候提示 把它修改成0 就没有提示了&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,7 +54,7 @@
       <pubDate>Mon, 21 Dec 2015 19:16:05 +0800</pubDate>
       
       <guid>https://4679.space/vimrc/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://github.com/4679/vimrc/&#34; alt=&#34;点我&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/4679/vimrc/&#34;&gt;点我&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;用心感受&lt;/p&gt;
 
