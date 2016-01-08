@@ -7,8 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyleft - 2015</copyright>
-    <lastBuildDate>Tue, 22 Dec 2015 18:32:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jan 2016 19:23:15 +0800</lastBuildDate>
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>oh my termux</title>
+      <link>https://4679.space/oh-my-termux/</link>
+      <pubDate>Fri, 08 Jan 2016 19:23:15 +0800</pubDate>
+      
+      <guid>https://4679.space/oh-my-termux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>干掉安卓烦人的 存储空间不足 的通知</title>
@@ -623,16 +632,6 @@ backend ss-out
 &lt;li&gt;&lt;a href=&#34;https://iclementine.wordpress.com&#34;&gt;iclementine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>转投到Hexo</title>
-      <link>https://4679.space/move-to-hexo/</link>
-      <pubDate>Fri, 06 Nov 2015 00:55:31 +0800</pubDate>
-      
-      <guid>https://4679.space/move-to-hexo/</guid>
-      <description>&lt;p&gt;迁移到了Hexo 感觉不错&lt;/p&gt;
 </description>
     </item>
     

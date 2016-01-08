@@ -176,6 +176,8 @@
     
         
     
+        
+    
 
     
         
@@ -189,13 +191,41 @@
 	
 	    <a class="newer-posts" href="/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 2 of 3</span>
+	<span class="page-number">Page 2 of 4</span>
 	
 	    <a class="older-posts" href="/page/3/">Older Posts &rarr;</a>
 	
 </nav>
 
     </div>
+
+    
+        
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/port-forwarding/">用阿里云的免费主机转发任意端口</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范 首先 来到TAE的控制台 点击配置管理 添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行 之后进入WebSSH 我们用到的软件是rinetd 简单好用 首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死 yum install screen 然后下载解压编译rinetd wget http://www.boutell.com/rinetd/http/rinetd.tar.gz tar zxvf rinetd.tar.gz cd rinetd make make install 编辑配置文件 vim /etc/rinetd.conf vim的用法我就不说了 网上都有 填入 0.0.0.0 刚才添加的端口号 VPS的IP 22 然后开启screen 启动rinetd screen rinetd -c /etc/rinetd.conf 这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行 重启之后 之前开启的SS转发也被关了 再开启一遍就行 这个方法可以用于转发任何端口 <a class="read-more" href="/port-forwarding/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/tech/">#tech</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-09T18:51:30&#43;08:00">
+            9 Dec 2015
+        </time>
+    </footer>
+</article>
 
     
         
@@ -310,40 +340,12 @@
 </article>
 
     
-        
-<article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/ss-speedup/">利用阿里的免费服务器中转SS加速</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>转载 原文 在国外的vps上架设的SS 难免会掉包 高延迟 目前比较不错的解决办法是用国内的高质量服务器进行转发 财大气粗的阿里为我们提供了免费的服务器 前面的步骤直接看原文吧 需要说明的地方是配置文件那部分 global ulimit-n 51200 defaults log global mode tcp option dontlognull timeout connect 1000 timeout client 150000 timeout server 150000 frontend ss-in bind *:8080 default_backend ss-out backend ss-out server server1 SS服务器IP:SS端口号 maxconn 20480 <a class="read-more" href="/ss-speedup/">&raquo;</a></p>
-    </section>
-    <footer class="post-meta">
-        
-        
-            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
-        
-        
-            4679kun
-        
-        on
-            
-                <a href="https://4679.space/tags/tech/">#tech</a>,
-            
-        
-        <time class="post-date" datetime="2015-12-03T20:09:44&#43;08:00">
-            3 Dec 2015
-        </time>
-    </footer>
-</article>
-
-    
 
     <nav class="pagination" role="navigation">
 	
 	    <a class="newer-posts" href="/">&larr; Newer Posts</a>
 	
-	<span class="page-number">Page 2 of 3</span>
+	<span class="page-number">Page 2 of 4</span>
 	
 	    <a class="older-posts" href="/page/3/">Older Posts &rarr;</a>
 	
