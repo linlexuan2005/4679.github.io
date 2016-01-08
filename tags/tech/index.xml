@@ -7,8 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyleft - 2015</copyright>
-    <lastBuildDate>Tue, 22 Dec 2015 18:32:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jan 2016 19:23:15 +0800</lastBuildDate>
     <atom:link href="https://4679.space/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>oh my termux</title>
+      <link>https://4679.space/oh-my-termux/</link>
+      <pubDate>Fri, 08 Jan 2016 19:23:15 +0800</pubDate>
+      
+      <guid>https://4679.space/oh-my-termux/</guid>
+      <description>&lt;p&gt;Termux是安卓上的一款软件 能提供一个差不多能用的linux环境 值得一提的是 它带有包管理器apt 常用的软件包差不多都有
+我写了个快速配置Termux的脚本 ![oh-my-termux][&lt;a href=&#34;https://github.com/4679/oh-my-termux&#34;&gt;https://github.com/4679/oh-my-termux&lt;/a&gt;]&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>干掉安卓烦人的 存储空间不足 的通知</title>

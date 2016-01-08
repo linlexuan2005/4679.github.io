@@ -143,6 +143,34 @@
 	   
 <article class="post post">
     <header class="post-header">
+        <h2 class="post-title"><a href="/ss-speedup/">利用阿里的免费服务器中转SS加速</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>转载 原文 在国外的vps上架设的SS 难免会掉包 高延迟 目前比较不错的解决办法是用国内的高质量服务器进行转发 财大气粗的阿里为我们提供了免费的服务器 前面的步骤直接看原文吧 需要说明的地方是配置文件那部分 global ulimit-n 51200 defaults log global mode tcp option dontlognull timeout connect 1000 timeout client 150000 timeout server 150000 frontend ss-in bind *:8080 default_backend ss-out backend ss-out server server1 SS服务器IP:SS端口号 maxconn 20480 <a class="read-more" href="/ss-speedup/">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        
+        
+            <img class="author-thumb" src="https://dn-4679kun.qbox.me/head.jpg" alt="Author image" nopin="nopin" />
+        
+        
+            4679kun
+        
+        on
+            
+                <a href="https://4679.space/tags/tech/">#tech</a>,
+            
+        
+        <time class="post-date" datetime="2015-12-03T20:09:44&#43;08:00">
+            3 Dec 2015
+        </time>
+    </footer>
+</article>
+
+	
+	   
+<article class="post post">
+    <header class="post-header">
         <h2 class="post-title"><a href="/sign/">用Openshift架设自己的贴吧签到站</a></h2>
     </header>
     <section class="post-excerpt">
