@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <title>
+    使用net-speeder缓解vps高延迟 高丢包率 | 4679&#39;s Blog
+  </title>
+
+
+  
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  
+  <link rel="canonical" href="http://4679.space/net-speeder/"/>
+
+  
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/sanitize.css">
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/responsive.css">
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/highlight_monokai.css">
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/theme.css">
+  <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/custom.css">
+  
+  
+  <link href="http://4679.space/index.xml" rel="alternate" type="application/rss+xml" title="4679&#39;s Blog" />
+  <link href="http://4679.space/index.xml" rel="feed" type="application/rss+xml" title="4679&#39;s Blog" />
+
+  
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="http://4679.space/">4679&#39;s Blog</a></h1>
+        <h2>Nothing Here</h2>
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="/page/about" target="_blank">About</a></li>
+          <li><a href="http://weibo.com/u/1963942417" target="_blank">Weibo</a></li>
+          <li><a href="https://twitter.com/4679kun" target="_blank">Twitter</a></li>
+          
+          <li><a href="https://github.com/4679" target="_blank">GitHub</a></li>
+          <li><a href="http://4679.space/index.xml" type="application/rss+xml" target="_blank">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>使用net-speeder缓解vps高延迟 高丢包率</h1>
+      <div class="meta">
+        Dec 4, 2015 &nbsp;
+        
+          #<a href="/tags/vps">vps</a>&nbsp;
+        
+      </div>
+    </div>
+    <article>
+      <p>net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了</p>
+
+<p><a href="https://github.com/snooda/net-speeder">项目地址</a></p>
+
+<p>首先安装依赖 libnet， libpcap</p>
+
+<pre><code class="language-bash">sudo pacman -Sy libnet libpcap
+</code></pre>
+
+<p>每个发行版安装方法都不同 就不一一说明了</p>
+
+<p>之后就是获取源代码了</p>
+
+<pre><code class="language-bash">git clone https://github.com/snooda/net-speeder
+cd net-speeder
+</code></pre>
+
+<p>然后编译</p>
+
+<p>vps架构是openvz的</p>
+
+<pre><code class="language-bash">sh build.sh -DCOOKED
+</code></pre>
+
+<p>vps是Xen,KVM或者是物理机的</p>
+
+<pre><code class="language-bash">sh build.sh
+</code></pre>
+
+<p>编译完成后 就可以运行了</p>
+
+<p>首先获取root权限</p>
+
+<pre><code class="language-bash">su
+</code></pre>
+
+<p>使用方法</p>
+
+<pre><code class="language-bash">./net_speeder 网卡名 加速规则（bpf规则)
+</code></pre>
+
+<p>最简单的使用方法（对于OpenVZ）</p>
+
+<pre><code class="language-bash"> ./net_speeder venet0 &quot;ip&quot;
+</code></pre>
+
+<p>ping一下看看效果吧:-)</p>
+
+<p>PS:对SS也有效哦</p>
+
+      
+      
+      <div id="share-this" class="col span_10">
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_pocket_large' displayText='Pocket'></span>
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_email_large' displayText='Email'></span>  
+      </div>
+    </article>
+    
+ <aside><div id="disqus_thread"></div></aside> 
+
+<script type="text/javascript">
+     
+    var disqus_shortname = '4679';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </main>
+  
+  <nav class="pagination">
+    
+      <span class="previous">&larr; <a href="http://4679.space/ss-speedup/" rel="prev">利用阿里的免费服务器中转SS加速</a></span>
+    
+    
+      <span class="next"><a href="http://4679.space/lets-encrypt/" rel="next">Let&#39;s Encrypt试用笔记</a> &rarr;</span>
+    
+  </nav>
+
+
+  
+  <footer role="contentinfo">
+    <div style="text-align:center;">
+      <img src="https://dn-4679kun.qbox.me/head.jpg" width="64" height="64"><br>
+      Written by 4679kun
+    </div>
+  </footer>
+
+
+</div>
+
+<script src="https://dn-4679kun.qbox.me/angels-ladder/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</body>
+</html>
+
