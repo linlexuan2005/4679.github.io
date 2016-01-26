@@ -6,8 +6,24 @@
     <description>Recent content in Blog on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 21 Dec 2015 18:30:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Jan 2016 19:28:45 +0800</lastBuildDate>
     <atom:link href="http://4679.space/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客复活了</title>
+      <link>http://4679.space/blog-reborn/</link>
+      <pubDate>Tue, 26 Jan 2016 19:28:45 +0800</pubDate>
+      
+      <guid>http://4679.space/blog-reborn/</guid>
+      <description>&lt;p&gt;前几天上VPS 发现我Hugo的文件夹不见了&lt;/p&gt;
+
+&lt;p&gt;当时我就懵逼了 还好文章的源文件都在github&lt;/p&gt;
+
+&lt;p&gt;于是在和拖延症搏斗了几天后 就有了你们现在看到的这个博客&lt;/p&gt;
+
+&lt;p&gt;顺便换了个主题 因为之前主题的配置文件一起不见了&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>迁移到Hugo</title>
