@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on 4679&#39;s Blog</title>
-    <link>https://4679.space/page/</link>
+    <link>http://4679.space/page/</link>
     <description>Recent content in Pages on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Copyleft - 2015</copyright>
     <lastBuildDate>Mon, 21 Dec 2015 12:30:14 +0800</lastBuildDate>
-    <atom:link href="https://4679.space/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://4679.space/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>关于我</title>
-      <link>https://4679.space/page/about/</link>
+      <link>http://4679.space/page/about/</link>
       <pubDate>Mon, 21 Dec 2015 12:30:14 +0800</pubDate>
       
-      <guid>https://4679.space/page/about/</guid>
+      <guid>http://4679.space/page/about/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;高三学渣&lt;/p&gt;
 
@@ -34,10 +33,10 @@
     
     <item>
       <title>朋友们</title>
-      <link>https://4679.space/page/friends/</link>
+      <link>http://4679.space/page/friends/</link>
       <pubDate>Fri, 06 Nov 2015 15:57:30 +0800</pubDate>
       
-      <guid>https://4679.space/page/friends/</guid>
+      <guid>http://4679.space/page/friends/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;友链
 
