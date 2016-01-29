@@ -6,8 +6,26 @@
     <description>Recent content in Tech on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 08 Jan 2016 19:23:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jan 2016 16:44:45 +0800</lastBuildDate>
     <atom:link href="http://4679.space/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>搭建了个Google反向代理</title>
+      <link>http://4679.space/google-mirror/</link>
+      <pubDate>Fri, 29 Jan 2016 16:44:45 +0800</pubDate>
+      
+      <guid>http://4679.space/google-mirror/</guid>
+      <description>
+
+&lt;h2 id=&#34;https-g-4679-space-https-g-4679-space:c3369eeade5e82ad1fc1259002c00e4c&#34;&gt;&lt;a href=&#34;https://g.4679.space&#34;&gt;https://g.4679.space&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;用到了wen.lu提供的&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module&#34;&gt;ngx_http_google_filter_module&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;为了方便安装 我写了个PKGBUILD放在aur上 Arch用户可以直接安装 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-boringssl-google_fliter/&#34;&gt;nginx-mainline-boringssl-google_fliter&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md&#34;&gt;配置文档在这&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>oh my termux</title>
