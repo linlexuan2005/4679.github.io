@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on 4679&#39;s Blog</title>
-    <link>http://4679.space/tags/tech/</link>
-    <description>Recent content in Tech on 4679&#39;s Blog</description>
+    <title>Tech on </title>
+    <link>/tags/tech/</link>
+    <description>Recent content in Tech on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
     <lastBuildDate>Fri, 29 Jan 2016 16:44:45 +0800</lastBuildDate>
-    <atom:link href="http://4679.space/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>搭建了个Google反向代理</title>
-      <link>http://4679.space/google-mirror/</link>
+      <link>/post/google-mirror/</link>
       <pubDate>Fri, 29 Jan 2016 16:44:45 +0800</pubDate>
       
-      <guid>http://4679.space/google-mirror/</guid>
+      <guid>/post/google-mirror/</guid>
       <description>
 
 &lt;h2 id=&#34;https-g-4679-space-https-g-4679-space:c3369eeade5e82ad1fc1259002c00e4c&#34;&gt;&lt;a href=&#34;https://g.4679.space&#34;&gt;https://g.4679.space&lt;/a&gt;&lt;/h2&gt;
@@ -29,10 +28,10 @@
     
     <item>
       <title>oh my termux</title>
-      <link>http://4679.space/oh-my-termux/</link>
+      <link>/post/oh-my-termux/</link>
       <pubDate>Fri, 08 Jan 2016 19:23:15 +0800</pubDate>
       
-      <guid>http://4679.space/oh-my-termux/</guid>
+      <guid>/post/oh-my-termux/</guid>
       <description>&lt;p&gt;Termux是安卓上的一款软件 能提供一个差不多能用的linux环境 值得一提的是 它带有包管理器apt 常用的软件包差不多都有
 我写了个快速配置Termux的脚本 &lt;a href=&#34;https://github.com/4679/oh-my-termux&#34;&gt;oh-my-termux&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -40,10 +39,10 @@
     
     <item>
       <title>干掉安卓烦人的 存储空间不足 的通知</title>
-      <link>http://4679.space/storage-space-running-out/</link>
+      <link>/post/storage-space-running-out/</link>
       <pubDate>Tue, 22 Dec 2015 18:32:31 +0800</pubDate>
       
-      <guid>http://4679.space/storage-space-running-out/</guid>
+      <guid>/post/storage-space-running-out/</guid>
       <description>&lt;p&gt;这个通知真是太烦人了 于是干掉他&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;需要ROOT权限&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -78,10 +77,10 @@
     
     <item>
       <title>一份简洁 优雅的vim配置</title>
-      <link>http://4679.space/vimrc/</link>
+      <link>/post/vimrc/</link>
       <pubDate>Mon, 21 Dec 2015 19:16:05 +0800</pubDate>
       
-      <guid>http://4679.space/vimrc/</guid>
+      <guid>/post/vimrc/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/4679/vimrc/&#34;&gt;点我&lt;/a&gt;&lt;/p&gt;
@@ -98,10 +97,10 @@
     
     <item>
       <title>用阿里云的免费主机转发任意端口</title>
-      <link>http://4679.space/port-forwarding/</link>
+      <link>/post/port-forwarding/</link>
       <pubDate>Wed, 09 Dec 2015 18:51:30 +0800</pubDate>
       
-      <guid>http://4679.space/port-forwarding/</guid>
+      <guid>/post/port-forwarding/</guid>
       <description>&lt;p&gt;上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范&lt;/p&gt;
 
 &lt;p&gt;首先 来到TAE的控制台
@@ -158,10 +157,10 @@ rinetd -c /etc/rinetd.conf
     
     <item>
       <title>Let&#39;s Encrypt试用笔记</title>
-      <link>http://4679.space/lets-encrypt/</link>
+      <link>/post/lets-encrypt/</link>
       <pubDate>Fri, 04 Dec 2015 13:27:52 +0800</pubDate>
       
-      <guid>http://4679.space/lets-encrypt/</guid>
+      <guid>/post/lets-encrypt/</guid>
       <description>&lt;p&gt;昨天 也就是12月3日 Let&amp;rsquo;s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验&lt;/p&gt;
 
 &lt;p&gt;首先 我们要获取Let&amp;rsquo;s Encrypt的客户端&lt;/p&gt;
@@ -209,10 +208,10 @@ cd letsencrypt
     
     <item>
       <title>利用阿里的免费服务器中转SS加速</title>
-      <link>http://4679.space/ss-speedup/</link>
+      <link>/post/ss-speedup/</link>
       <pubDate>Thu, 03 Dec 2015 20:09:44 +0800</pubDate>
       
-      <guid>http://4679.space/ss-speedup/</guid>
+      <guid>/post/ss-speedup/</guid>
       <description>&lt;p&gt;&lt;strong&gt;转载 &lt;a href=&#34;http://xuqk.tk/251&#34;&gt;原文&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;在国外的vps上架设的SS 难免会掉包 高延迟  目前比较不错的解决办法是用国内的高质量服务器进行转发
@@ -242,10 +241,10 @@ backend ss-out
     
     <item>
       <title>用Openshift架设自己的贴吧签到站</title>
-      <link>http://4679.space/sign/</link>
+      <link>/post/sign/</link>
       <pubDate>Tue, 01 Dec 2015 13:56:08 +0800</pubDate>
       
-      <guid>http://4679.space/sign/</guid>
+      <guid>/post/sign/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sign.4679.space&#34;&gt;现成的 不想动手的就用这个吧&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;首先 我们得去注册个Openshift的账号 这个应该不用详细写了 大家应该都会&lt;/p&gt;
