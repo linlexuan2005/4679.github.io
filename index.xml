@@ -6,8 +6,18 @@
     <description>Recent content on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Mar 2016 08:59:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Mar 2016 18:52:03 +0800</lastBuildDate>
     <atom:link href="http://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>测试</title>
+      <link>http://4679.space/test/</link>
+      <pubDate>Wed, 16 Mar 2016 18:52:03 +0800</pubDate>
+      
+      <guid>http://4679.space/test/</guid>
+      <description>&lt;p&gt;测试&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>博客启用Certificate Transparency</title>
@@ -585,39 +595,6 @@ cd net-speeder
 &lt;p&gt;ping一下看看效果吧:-)&lt;/p&gt;
 
 &lt;p&gt;PS:对SS也有效哦&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>利用阿里的免费服务器中转SS加速</title>
-      <link>http://4679.space/ss-speedup/</link>
-      <pubDate>Thu, 03 Dec 2015 20:09:44 +0800</pubDate>
-      
-      <guid>http://4679.space/ss-speedup/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;转载 &lt;a href=&#34;http://xuqk.tk/251&#34;&gt;原文&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;在国外的vps上架设的SS 难免会掉包 高延迟  目前比较不错的解决办法是用国内的高质量服务器进行转发
-财大气粗的阿里为我们提供了免费的服务器&lt;/p&gt;
-
-&lt;p&gt;前面的步骤直接看原文吧&lt;/p&gt;
-
-&lt;p&gt;需要说明的地方是配置文件那部分&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cfg&#34;&gt;global
-	ulimit-n 51200
-defaults
-	log global
-	mode tcp
-	option dontlognull
-	timeout connect 1000
-	timeout client 150000
-	timeout server 150000
-frontend ss-in
-	bind *:8080
-	default_backend ss-out
-backend ss-out
-	server server1 SS服务器IP:SS端口号 maxconn 20480
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
