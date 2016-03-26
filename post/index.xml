@@ -6,8 +6,37 @@
     <description>Recent content in Posts on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Mar 2016 08:59:03 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Mar 2016 18:58:03 +0800</lastBuildDate>
     <atom:link href="http://4679.space/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>在Android上使用linux图形界面</title>
+      <link>http://4679.space/linux-deploy/</link>
+      <pubDate>Sat, 26 Mar 2016 18:58:03 +0800</pubDate>
+      
+      <guid>http://4679.space/linux-deploy/</guid>
+      <description>&lt;p&gt;先上几张图
+&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/format/webp&#34; alt=&#34;XServer XSDL&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F2.png?imageView2/2/format/webp&#34; alt=&#34;i3wm&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F3.png?imageView2/2/format/webp&#34; alt=&#34;vim&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F4.png?imageView2/2/format/webp&#34; alt=&#34;mc&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;具体步骤呢
+1.先用&lt;a href=&#34;http://www.coolapk.com/apk/ru.meefik.linuxdeploy&#34;&gt;Linux Deploy&lt;/a&gt;安装好系统,这个很简单,装好Busybox,在设置里选好选项一键安装就行
+2.安装好&lt;a href=&#34;https://play.google.com/store/apps/details?id=x.org.server&#34;&gt;XServer XSDL&lt;/a&gt;,Android上的X服务器,效率比用VNC好多了
+3.通过ssh连接到装好的系统,客户端我推荐&lt;a href=&#34;http://www.coolapk.com/apk/com.sonelli.juicessh&#34;&gt;JuiceSSH&lt;/a&gt;
+4.安装好你要使用的桌面,我选择的是i3wm
+5.打开XServer XSDL,配置好分辨率和字体缩放,分辨率我选的原生,字体缩放0.5x,然后就会看到图1的界面了
+6.进入终端,输入 export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4712
+7.启动桌面,比如我用i3就输入i3wm,xfce就是startxfce,lxde就是startlxde,等等
+8.切换回XServer XSDL,不出意外的话你就能看到桌面了,随意折腾吧～&lt;/p&gt;
+
+&lt;p&gt;PS:图中i3的配置来自于&lt;a href=&#34;https://github.com/ID1258/oh-my-i3&#34;&gt;oh-my-i3&lt;/a&gt;,很好看,赞一个&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>博客启用Certificate Transparency</title>
@@ -497,14 +526,14 @@ cd letsencrypt
 &lt;p&gt;里面等着你了 赶快修改你的服务器配置文件来使用它吧&lt;/p&gt;
 
 &lt;p&gt;最后上一张效果图
-&lt;img src=&#34;https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png&#34; alt=&#34;效果图&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png?imageView2/2/format/webp&#34; alt=&#34;效果图&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PS:证书的有效期是3个月 记得续签哦&lt;/p&gt;
 
 &lt;p&gt;感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！&lt;/p&gt;
 
 &lt;p&gt;本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-)
-&lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg?imageView2/2/format/webp&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -596,16 +625,6 @@ frontend ss-in
 backend ss-out
 	server server1 SS服务器IP:SS端口号 maxconn 20480
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>祝自己生日快乐</title>
-      <link>http://4679.space/birthday/</link>
-      <pubDate>Wed, 02 Dec 2015 00:12:01 +0800</pubDate>
-      
-      <guid>http://4679.space/birthday/</guid>
-      <description>&lt;p&gt;就十七岁了 时间过得真快&lt;/p&gt;
 </description>
     </item>
     

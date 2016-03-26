@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    Tech | 4679&#39;s Blog
+    在Android上使用linux图形界面 | 4679&#39;s Blog
   </title>
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="http://4679.space/tags/tech/"/>
+  <link rel="canonical" href="http://4679.space/linux-deploy/"/>
 
   
   <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/sanitize.css">
@@ -62,11 +62,9 @@
 
 
   
-  <main id="list" role="main">
-    <div class="article-header light-gray"><h1>#Tech</h1></div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/linux-deploy/">在Android上使用linux图形界面 </a></h2>
+  <main id="single" role="main">
+    <div class="article-header">
+      <h1>在Android上使用linux图形界面</h1>
       <div class="meta">
         Mar 26, 2016 &nbsp;
         
@@ -74,88 +72,63 @@
         
       </div>
     </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/google-mirror/">搭建了个Google反向代理 </a></h2>
-      <div class="meta">
-        Jan 29, 2016 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
+    <article>
+      <p>先上几张图
+<img src="https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/format/webp" alt="XServer XSDL" /></p>
+
+<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F2.png?imageView2/2/format/webp" alt="i3wm" /></p>
+
+<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F3.png?imageView2/2/format/webp" alt="vim" /></p>
+
+<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F4.png?imageView2/2/format/webp" alt="mc" /></p>
+
+<p>具体步骤呢
+1.先用<a href="http://www.coolapk.com/apk/ru.meefik.linuxdeploy">Linux Deploy</a>安装好系统,这个很简单,装好Busybox,在设置里选好选项一键安装就行
+2.安装好<a href="https://play.google.com/store/apps/details?id=x.org.server">XServer XSDL</a>,Android上的X服务器,效率比用VNC好多了
+3.通过ssh连接到装好的系统,客户端我推荐<a href="http://www.coolapk.com/apk/com.sonelli.juicessh">JuiceSSH</a>
+4.安装好你要使用的桌面,我选择的是i3wm
+5.打开XServer XSDL,配置好分辨率和字体缩放,分辨率我选的原生,字体缩放0.5x,然后就会看到图1的界面了
+6.进入终端,输入 export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4712
+7.启动桌面,比如我用i3就输入i3wm,xfce就是startxfce,lxde就是startlxde,等等
+8.切换回XServer XSDL,不出意外的话你就能看到桌面了,随意折腾吧～</p>
+
+<p>PS:图中i3的配置来自于<a href="https://github.com/ID1258/oh-my-i3">oh-my-i3</a>,很好看,赞一个</p>
+
+      
+      
+      <div id="share-this" class="col span_10">
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_pocket_large' displayText='Pocket'></span>
+        <span class='st_sharethis_large' displayText='ShareThis'></span>
+        <span class='st_email_large' displayText='Email'></span>  
       </div>
-    </div>
+    </article>
     
-    <div class="summary">
-      <h2><a href="http://4679.space/oh-my-termux/">oh my termux </a></h2>
-      <div class="meta">
-        Jan 8, 2016 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/storage-space-running-out/">干掉安卓烦人的 存储空间不足 的通知 </a></h2>
-      <div class="meta">
-        Dec 22, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/vimrc/">一份简洁 优雅的vim配置 </a></h2>
-      <div class="meta">
-        Dec 21, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/port-forwarding/">用阿里云的免费主机转发任意端口 </a></h2>
-      <div class="meta">
-        Dec 9, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/lets-encrypt/">Let&#39;s Encrypt试用笔记 </a></h2>
-      <div class="meta">
-        Dec 4, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/ss-speedup/">利用阿里的免费服务器中转SS加速 </a></h2>
-      <div class="meta">
-        Dec 3, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
-    <div class="summary">
-      <h2><a href="http://4679.space/sign/">用Openshift架设自己的贴吧签到站 </a></h2>
-      <div class="meta">
-        Dec 1, 2015 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
-    </div>
-    
+ <aside><div id="disqus_thread"></div></aside> 
+
+<script type="text/javascript">
+     
+    var disqus_shortname = '4679';
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
   </main>
+  
+  <nav class="pagination">
+    
+      <span class="previous">&larr; <a href="http://4679.space/certificate-transparency/" rel="prev">博客启用Certificate Transparency</a></span>
+    
+    
+  </nav>
 
 
   
