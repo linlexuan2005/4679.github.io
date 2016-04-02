@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 4679&#39;s Blog</title>
-    <link>http://4679.space/post/</link>
+    <link>https://4679.space/post/</link>
     <description>Recent content in Posts on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 26 Mar 2016 18:58:03 +0800</lastBuildDate>
-    <atom:link href="http://4679.space/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://4679.space/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>在Android上使用Linux图形界面</title>
-      <link>http://4679.space/linux-deploy/</link>
+      <link>https://4679.space/linux-deploy/</link>
       <pubDate>Sat, 26 Mar 2016 18:58:03 +0800</pubDate>
       
-      <guid>http://4679.space/linux-deploy/</guid>
+      <guid>https://4679.space/linux-deploy/</guid>
       <description>&lt;p&gt;先上几张图
 &lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;XServer XSDL&#34; /&gt;&lt;/p&gt;
 
@@ -48,10 +48,10 @@
     
     <item>
       <title>博客启用Certificate Transparency</title>
-      <link>http://4679.space/certificate-transparency/</link>
+      <link>https://4679.space/certificate-transparency/</link>
       <pubDate>Tue, 01 Mar 2016 08:59:03 +0800</pubDate>
       
-      <guid>http://4679.space/certificate-transparency/</guid>
+      <guid>https://4679.space/certificate-transparency/</guid>
       <description>&lt;p&gt;谷歌爸爸的东西 当然要兹磁啦&lt;/p&gt;
 
 &lt;p&gt;参考了这两篇文章&lt;/p&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>搭建了个Google反向代理</title>
-      <link>http://4679.space/google-mirror/</link>
+      <link>https://4679.space/google-mirror/</link>
       <pubDate>Fri, 29 Jan 2016 16:44:45 +0800</pubDate>
       
-      <guid>http://4679.space/google-mirror/</guid>
+      <guid>https://4679.space/google-mirror/</guid>
       <description>
 
 &lt;h2 id=&#34;https-g-4679-space-https-g-4679-space:c3369eeade5e82ad1fc1259002c00e4c&#34;&gt;&lt;a href=&#34;https://g.4679.space&#34;&gt;https://g.4679.space&lt;/a&gt;&lt;/h2&gt;
@@ -92,10 +92,10 @@
     
     <item>
       <title>博客复活了</title>
-      <link>http://4679.space/blog-reborn/</link>
+      <link>https://4679.space/blog-reborn/</link>
       <pubDate>Tue, 26 Jan 2016 19:28:45 +0800</pubDate>
       
-      <guid>http://4679.space/blog-reborn/</guid>
+      <guid>https://4679.space/blog-reborn/</guid>
       <description>&lt;p&gt;前几天上VPS 发现我Hugo的文件夹不见了&lt;/p&gt;
 
 &lt;p&gt;当时我就懵逼了 还好文章的源文件都在github&lt;/p&gt;
@@ -108,10 +108,10 @@
     
     <item>
       <title>oh my termux</title>
-      <link>http://4679.space/oh-my-termux/</link>
+      <link>https://4679.space/oh-my-termux/</link>
       <pubDate>Fri, 08 Jan 2016 19:23:15 +0800</pubDate>
       
-      <guid>http://4679.space/oh-my-termux/</guid>
+      <guid>https://4679.space/oh-my-termux/</guid>
       <description>&lt;p&gt;Termux是安卓上的一款软件 能提供一个差不多能用的linux环境 值得一提的是 它带有包管理器apt 常用的软件包差不多都有
 我写了个快速配置Termux的脚本 &lt;a href=&#34;https://github.com/4679/oh-my-termux&#34;&gt;oh-my-termux&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -119,10 +119,10 @@
     
     <item>
       <title>干掉安卓烦人的 存储空间不足 的通知</title>
-      <link>http://4679.space/storage-space-running-out/</link>
+      <link>https://4679.space/storage-space-running-out/</link>
       <pubDate>Tue, 22 Dec 2015 18:32:31 +0800</pubDate>
       
-      <guid>http://4679.space/storage-space-running-out/</guid>
+      <guid>https://4679.space/storage-space-running-out/</guid>
       <description>&lt;p&gt;这个通知真是太烦人了 于是干掉他&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;需要ROOT权限&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -157,10 +157,10 @@
     
     <item>
       <title>一份简洁 优雅的vim配置</title>
-      <link>http://4679.space/vimrc/</link>
+      <link>https://4679.space/vimrc/</link>
       <pubDate>Mon, 21 Dec 2015 19:16:05 +0800</pubDate>
       
-      <guid>http://4679.space/vimrc/</guid>
+      <guid>https://4679.space/vimrc/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/4679/vimrc/&#34;&gt;点我&lt;/a&gt;&lt;/p&gt;
@@ -177,20 +177,20 @@
     
     <item>
       <title>迁移到Hugo</title>
-      <link>http://4679.space/move-to-hugo/</link>
+      <link>https://4679.space/move-to-hugo/</link>
       <pubDate>Mon, 21 Dec 2015 18:30:19 +0800</pubDate>
       
-      <guid>http://4679.space/move-to-hugo/</guid>
+      <guid>https://4679.space/move-to-hugo/</guid>
       <description>&lt;p&gt;第二次迁移博客了 这次迁移到了Hugo 一款用go语言编写的静态博客生成器 优点是效率比Hexo高太多 之前每次生成博客需要两三秒 现在只用1秒不到 不过目前还没有用于Hexo的迁移方案 全是我手动迁移的 累死了(´_ゝ`)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>利用sslh在同一个端口运行nginx openvpn xmpp ssh等服务</title>
-      <link>http://4679.space/sslh/</link>
+      <link>https://4679.space/sslh/</link>
       <pubDate>Wed, 16 Dec 2015 21:29:18 +0800</pubDate>
       
-      <guid>http://4679.space/sslh/</guid>
+      <guid>https://4679.space/sslh/</guid>
       <description>&lt;p&gt;这有什么用呢？ 某些运营商或者学校可能屏蔽了一些服务的默认端口 比如屏蔽了22端口 你就只能把ssh的监听端口改成其他的 要是更变态 开启了白名单模式呢 那样就只能通过某些端口访问了 443就是其中一个 正常人一般不会屏蔽它 但是如果通过22端口访问vps的话 启用了TLS的http服务器怎么办呢 这时候就要用到sslh了
   sslh的原理很简单 通过分析数据包的特征辨别是什么协议的访问 把对同一端口不同协议的访问分流到不同的端口上&lt;/p&gt;
 
@@ -281,10 +281,10 @@ service sslh start
     
     <item>
       <title>用阿里云的免费主机转发任意端口</title>
-      <link>http://4679.space/port-forwarding/</link>
+      <link>https://4679.space/port-forwarding/</link>
       <pubDate>Wed, 09 Dec 2015 18:51:30 +0800</pubDate>
       
-      <guid>http://4679.space/port-forwarding/</guid>
+      <guid>https://4679.space/port-forwarding/</guid>
       <description>&lt;p&gt;上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范&lt;/p&gt;
 
 &lt;p&gt;首先 来到TAE的控制台
@@ -341,10 +341,10 @@ rinetd -c /etc/rinetd.conf
     
     <item>
       <title>给博客做了个镜像</title>
-      <link>http://4679.space/mirror/</link>
+      <link>https://4679.space/mirror/</link>
       <pubDate>Wed, 09 Dec 2015 15:56:05 +0800</pubDate>
       
-      <guid>http://4679.space/mirror/</guid>
+      <guid>https://4679.space/mirror/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://borderland.me&#34;&gt;&amp;mdash;&amp;mdash;&amp;ndash;这里&amp;mdash;&amp;mdash;&amp;ndash;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;放在github 速度应该还不错
@@ -354,10 +354,10 @@ rinetd -c /etc/rinetd.conf
     
     <item>
       <title>服务器后端切换到H2O</title>
-      <link>http://4679.space/h2o/</link>
+      <link>https://4679.space/h2o/</link>
       <pubDate>Sat, 05 Dec 2015 12:20:53 +0800</pubDate>
       
-      <guid>http://4679.space/h2o/</guid>
+      <guid>https://4679.space/h2o/</guid>
       <description>&lt;p&gt;H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2&lt;/p&gt;
 
 &lt;p&gt;Archlinux用户直接从AUR安装就可以了
@@ -496,10 +496,10 @@ hosts:
     
     <item>
       <title>Let&#39;s Encrypt试用笔记</title>
-      <link>http://4679.space/lets-encrypt/</link>
+      <link>https://4679.space/lets-encrypt/</link>
       <pubDate>Fri, 04 Dec 2015 13:27:52 +0800</pubDate>
       
-      <guid>http://4679.space/lets-encrypt/</guid>
+      <guid>https://4679.space/lets-encrypt/</guid>
       <description>&lt;p&gt;昨天 也就是12月3日 Let&amp;rsquo;s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验&lt;/p&gt;
 
 &lt;p&gt;首先 我们要获取Let&amp;rsquo;s Encrypt的客户端&lt;/p&gt;
@@ -547,10 +547,10 @@ cd letsencrypt
     
     <item>
       <title>使用net-speeder缓解vps高延迟 高丢包率</title>
-      <link>http://4679.space/net-speeder/</link>
+      <link>https://4679.space/net-speeder/</link>
       <pubDate>Fri, 04 Dec 2015 10:50:51 +0800</pubDate>
       
-      <guid>http://4679.space/net-speeder/</guid>
+      <guid>https://4679.space/net-speeder/</guid>
       <description>&lt;p&gt;net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/snooda/net-speeder&#34;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
@@ -605,10 +605,10 @@ cd net-speeder
     
     <item>
       <title>利用阿里的免费服务器中转SS加速</title>
-      <link>http://4679.space/ss-speedup/</link>
+      <link>https://4679.space/ss-speedup/</link>
       <pubDate>Thu, 03 Dec 2015 20:09:44 +0800</pubDate>
       
-      <guid>http://4679.space/ss-speedup/</guid>
+      <guid>https://4679.space/ss-speedup/</guid>
       <description>&lt;p&gt;&lt;strong&gt;转载 &lt;a href=&#34;http://xuqk.tk/251&#34;&gt;原文&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;在国外的vps上架设的SS 难免会掉包 高延迟  目前比较不错的解决办法是用国内的高质量服务器进行转发
