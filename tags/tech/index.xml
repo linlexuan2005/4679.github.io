@@ -16,13 +16,13 @@
       
       <guid>http://4679.space/linux-deploy/</guid>
       <description>&lt;p&gt;先上几张图
-&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/format/webp&#34; alt=&#34;XServer XSDL&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;XServer XSDL&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F2.png?imageView2/2/format/webp&#34; alt=&#34;i3wm&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F2.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;i3wm&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F3.png?imageView2/2/format/webp&#34; alt=&#34;vim&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F3.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;vim&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F4.png?imageView2/2/format/webp&#34; alt=&#34;mc&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/linux_deploy%2F4.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;mc&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;具体步骤呢&lt;/p&gt;
 
@@ -142,10 +142,10 @@
       <description>&lt;p&gt;上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范&lt;/p&gt;
 
 &lt;p&gt;首先 来到TAE的控制台
-&lt;img src=&#34;https://dn-4679kun.qbox.me/port/Screenshot_20151209-182822.png?imageView2/2/format/webp&#34; alt=&#34;1&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/port/Screenshot_20151209-182822.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点击配置管理
-&lt;img src=&#34;https://dn-4679kun.qbox.me/port/Screenshot_20151209-182847.png?imageView2/2/format/webp&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/port/Screenshot_20151209-182847.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行&lt;/p&gt;
 
@@ -233,14 +233,14 @@ cd letsencrypt
 &lt;p&gt;里面等着你了 赶快修改你的服务器配置文件来使用它吧&lt;/p&gt;
 
 &lt;p&gt;最后上一张效果图
-&lt;img src=&#34;https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png?imageView2/2/format/webp&#34; alt=&#34;效果图&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;效果图&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PS:证书的有效期是3个月 记得续签哦&lt;/p&gt;
 
 &lt;p&gt;感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！&lt;/p&gt;
 
 &lt;p&gt;本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-)
-&lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg?imageView2/2/format/webp&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg?imageView2/2/q/85/format/jpg&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -288,13 +288,13 @@ backend ss-out
 &lt;p&gt;首先 我们得去注册个Openshift的账号 这个应该不用详细写了 大家应该都会&lt;/p&gt;
 
 &lt;p&gt;登陆到控制台之后
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/1.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/1.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;点击大大的蓝色按钮
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/2.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/2.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;搜索cacti 点击它
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/3.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/3.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;上面的输入框是域名地址 自己想一个 下面的输入框里面换成&lt;/p&gt;
 
@@ -302,21 +302,21 @@ backend ss-out
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这里感谢创世神域写的安装脚本 &lt;a href=&#34;http://www.puteulanus.com/archives/572&#34;&gt;原地址&lt;/a&gt;
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/4.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/4.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Create!&lt;/p&gt;
 
 &lt;p&gt;完成以后就可以访问你刚才设定的地址了
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/5.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/5.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;选不
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/6.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/6.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;下面三项填好 完成
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/7.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/7.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;搭建好了
-&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/8.png?imageView2/2/format/webp&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://dn-4679kun.qbox.me/sign/8.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;记得添加帐号之后要刷新贴吧列表哦&lt;/p&gt;
 </description>
