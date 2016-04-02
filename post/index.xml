@@ -66,7 +66,7 @@
 
 &lt;p&gt;这是我用的服务端 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-mod4679/&#34;&gt;nginx-mainline-mod4679&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;nginx+BoringSSL+google反代模块+Certificate Transparency模块&lt;/p&gt;
+&lt;p&gt;nginx+OpenSSL(Cloudflare的补丁)+google反代模块+Certificate Transparency模块&lt;/p&gt;
 
 &lt;p&gt;另外婊一下cloudflare在国内的速度 现在直连比之前走cloudflare快多了&lt;/p&gt;
 </description>
@@ -84,7 +84,9 @@
 
 &lt;p&gt;用到了wen.lu提供的&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module&#34;&gt;ngx_http_google_filter_module&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;为了方便安装 我写了个PKGBUILD放在aur上 Arch用户可以直接安装 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-boringssl-google_fliter/&#34;&gt;nginx-mainline-boringssl-google_fliter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;为了方便安装 我写了个PKGBUILD放在aur上 Arch用户可以直接安装 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-boringssl-google_fliter/&#34;&gt;nginx-mainline-boringssl-google_fliter&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;这个坑弃了 新的服务端 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-mod4679/&#34;&gt;nginx-mainline-mod4679&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md&#34;&gt;配置文档在这&lt;/a&gt;&lt;/p&gt;
 </description>
