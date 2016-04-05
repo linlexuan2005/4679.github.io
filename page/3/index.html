@@ -6,7 +6,7 @@
   
   <meta charset="UTF-8">
   <title>
-    在Android上使用Linux图形界面 | Libnull
+    Libnull
   </title>
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
 
   
-  <link rel="canonical" href="https://libnull.com/linux-deploy/"/>
+  <link rel="canonical" href="https://libnull.com/"/>
 
   
   <link rel="stylesheet" href="https://dn-4679kun.qbox.me/angels-ladder/css/sanitize.css">
@@ -64,84 +64,63 @@
   </header>
 
 
+
+
+<main id="index" role="main">
+  <div class="article-header light-gray"><h1>Articles</h1></div>
   
-  <main id="single" role="main">
-    <div class="article-header">
-      <h1>在Android上使用Linux图形界面</h1>
-      <div class="meta">
-        Mar 26, 2016 &nbsp;
-        
-          #<a href="/tags/tech">tech</a>&nbsp;
-        
-      </div>
+  
+  <div class="summary">
+    <h2><a href="https://libnull.com/vps2arch/">用黑魔法把任意系统的vps变成Arch </a></h2>
+    <div class="meta">
+      Nov 5, 2015 &nbsp;
+      
+        #<a href="/tags/vps">vps</a>&nbsp;
+      
     </div>
-    <article>
-      <p>先上几张图
-<img src="https://dn-4679kun.qbox.me/linux_deploy%2F1.png?imageView2/2/q/85/format/jpg" alt="XServer XSDL" /></p>
-
-<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F2.png?imageView2/2/q/85/format/jpg" alt="i3wm" /></p>
-
-<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F3.png?imageView2/2/q/85/format/jpg" alt="vim" /></p>
-
-<p><img src="https://dn-4679kun.qbox.me/linux_deploy%2F4.png?imageView2/2/q/85/format/jpg" alt="mc" /></p>
-
-<p>具体步骤呢</p>
-
-<p>1.先用<a href="http://www.coolapk.com/apk/ru.meefik.linuxdeploy">Linux Deploy</a>安装好系统,这个很简单,装好Busybox,在设置里选好选项一键安装就行</p>
-
-<p>2.安装好<a href="https://play.google.com/store/apps/details?id=x.org.server">XServer XSDL</a>,Android上的X服务器,效率比用VNC好多了</p>
-
-<p>3.通过ssh连接到装好的系统,客户端我推荐<a href="http://www.coolapk.com/apk/com.sonelli.juicessh">JuiceSSH</a></p>
-
-<p>4.安装好你要使用的桌面,我选择的是i3wm</p>
-
-<p>5.打开XServer XSDL,配置好分辨率和字体缩放,分辨率我选的原生,字体缩放0.5x,然后就会看到图1的界面了</p>
-
-<p>6.进入终端,输入 export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4712</p>
-
-<p>7.启动桌面,比如我用i3就输入i3wm,xfce就是startxfce,lxde就是startlxde,等等</p>
-
-<p>8.切换回XServer XSDL,不出意外的话你就能看到桌面了,随意折腾吧～</p>
-
-<p>PS:图中i3的配置来自于<a href="https://github.com/ID1258/oh-my-i3">oh-my-i3</a>,很好看,赞一个</p>
-
-      
-      
-      <div id="share-this" class="col span_10">
-        <span class='st_twitter_large' displayText='Tweet'></span>
-        <span class='st_facebook_large' displayText='Facebook'></span>
-        <span class='st_googleplus_large' displayText='Google +'></span>
-        <span class='st_pocket_large' displayText='Pocket'></span>
-        <span class='st_sharethis_large' displayText='ShareThis'></span>
-        <span class='st_email_large' displayText='Email'></span>  
-      </div>
-    </article>
-    
- <aside><div id="disqus_thread"></div></aside> 
-
-<script type="text/javascript">
-     
-    var disqus_shortname = '4679';
-
-     
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-  </main>
+  </div>
   
-  <nav class="pagination">
+</main>
+
+
+
+<nav>
+  
+  
     
-      <span class="previous">&larr; <a href="https://libnull.com/certificate-transparency/" rel="prev">博客启用Certificate Transparency</a></span>
+    <ul class="pagination">
+        
+        <li>
+            <a href="/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        </li>
+        
+        <li
+        >
+        <a href="/page/2/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        
+        <li
+        ><a href="/">1</a></li>
+        
+        <li
+        ><a href="/page/2/">2</a></li>
+        
+        <li
+        class="active"><a href="/page/3/">3</a></li>
+        
+        <li
+        class="disabled">
+        <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        
+        <li>
+            <a href="/page/3/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+        
+    </ul>
     
-    
-      <span class="next"><a href="https://libnull.com/domain-changed/" rel="next">换域名了</a> &rarr;</span>
-    
-  </nav>
+</nav>
+
 
 
   
