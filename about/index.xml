@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Libnull</title>
+    <link>https://libnull.com/about/</link>
+    <description>Recent content in Abouts on Libnull</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 Dec 2015 12:30:14 +0800</lastBuildDate>
+    <atom:link href="https://libnull.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>关于我</title>
+      <link>https://libnull.com/about/about/</link>
+      <pubDate>Mon, 21 Dec 2015 12:30:14 +0800</pubDate>
+      
+      <guid>https://libnull.com/about/about/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;高三学渣
+
+&lt;ul&gt;
+&lt;li&gt;Archlinux用户 &lt;a href=&#34;https://aur.archlinux.org/account/4679kun/&#34;&gt;AUR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://weibo.cn/u/1963942417&#34;&gt;微博&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/4679&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;邮箱 4679kun@outlook.com&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
