@@ -1,0 +1,343 @@
+    <!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="4679kun">
+		<meta name="description" content="Nothing Here">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>服务器后端切换到H2O &middot; Libnull</title>
+		<link rel="shortcut icon" href="https://libnull.com/images/favicon.ico">
+		<link rel="stylesheet" href="https://libnull.com/css/style.css">
+		<link rel="stylesheet" href="https://libnull.com/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://libnull.com/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://libnull.com/index.xml" rel="alternate" type="application/rss+xml" title="Libnull" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://libnull.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://libnull.com/about'>About</a>
+	
+
+	
+	<a class="cta" href="https://libnull.com/index.xml">RSS</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>服务器后端切换到H2O</h1>
+                    <h2 class="headline">December 5, 2015</h2>
+                </header>
+                <section id="post-body">
+                    <p>H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2</p>
+
+<p>Archlinux用户直接从AUR安装就可以了
+其他系统请自行寻找源或者编译安装</p>
+
+<p>下面是我的配置文件 可以当个示范</p>
+
+<pre><code class="language-YAML">access-log: /dev/null 
+error-log: /dev/null 
+pid-file: /var/run/h2o.pid
+max-connections: 51200
+file.send-gzip: ON 
+tcp-fastopen: 3 
+user: www
+http2-reprioritize-blocking-assets: ON 
+file.index: [ 'index.php', 'index.html' ]
+file.mime.addtypes: 
+    text/html: .html .htm .shtml
+    text/css: .css
+    text/xml: .xml
+    image/gif: .gif
+    image/jpeg: .jpeg .jpg
+    application/javascript: .js
+    application/atom+xml: .atom
+    application/rss+xml: .rss
+
+    text/mathml: .mml
+    text/plain: .txt
+    text/vnd.sun.j2me.app-descriptor: .jad
+    text/vnd.wap.wml: .wml
+    text/x-component: .htc
+
+    image/png: .png
+    image/tiff: .tif .tiff
+    image/vnd.wap.wbmp: .wbmp
+    image/x-icon: .ico
+    image/x-jng: .jng
+    image/x-ms-bmp: .bmp
+    image/svg+xml: .svg .svgz
+    image/webp: .webp
+
+    application/font-woff: .woff
+    application/java-archive: .jar .war .ear
+    application/json: .json
+    application/mac-binhex40: .hqx
+    application/msword: .doc
+    application/pdf: .pdf
+    application/postscript: .ps .eps .ai
+    application/rtf: .rtf
+    application/vnd.apple.mpegurl: .m3u8
+    application/vnd.ms-excel: .xls
+    application/vnd.ms-fontobject: .eot
+    application/vnd.ms-powerpoint: .ppt
+    application/vnd.wap.wmlc: .wmlc
+    application/vnd.google-earth.kml+xml: .kml
+    application/vnd.google-earth.kmz: .kmz
+    application/x-7z-compressed: .7z
+    application/x-cocoa: .cco
+    application/x-java-archive-diff: .jardiff
+    application/x-java-jnlp-file: .jnlp
+    application/x-makeself: .run
+    application/x-perl: .pl .pm
+    application/x-pilot: .prc .pdb
+    application/x-rar-compressed: .rar
+    application/x-redhat-package-manager: .rpm
+    application/x-sea: .sea
+    application/x-shockwave-flash: .swf
+    application/x-stuffit: .sit
+    application/x-tcl: .tcl .tk
+    application/x-x509-ca-cert: .der .pem .crt
+    application/x-xpinstall: .xpi
+    application/xhtml+xml: .xhtml
+    application/xspf+xml: .xspf
+    application/zip: .zip
+
+    application/octet-stream: .bin .exe .dll
+    application/octet-stream: .deb
+    application/octet-stream: .dmg
+    application/octet-stream: .iso .img
+    application/octet-stream: .msi .msp .msm
+
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document: .docx
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: .xlsx
+    application/vnd.openxmlformats-officedocument.presentationml.presentation: .pptx
+
+    audio/midi: .mid .midi .kar
+    audio/mpeg: .mp3
+    audio/ogg: .ogg
+    audio/x-m4a: .m4a
+    audio/x-realaudio: .ra
+
+    video/3gpp: .3gpp .3gp
+    video/mp2t: .ts
+    video/mp4: .mp4
+    video/mpeg: .mpeg .mpg
+    video/quicktime: .mov
+    video/webm: .webm
+    video/x-flv: .flv
+    video/x-m4v: .m4v
+    video/x-mng: .mng
+    video/x-ms-asf: .asx .asf
+    video/x-ms-wmv: .wmv
+    video/x-msvideo: .avi
+
+hosts:
+  &quot;4679.space:443&quot;: 
+    header.add: &quot;strict-transport-security: max-age=39420000; includesubdomains; preload&quot; 
+    header.add: &quot;X-Frame-Options: SAMEORIGIN&quot;
+    header.add: &quot;X-Content-Type-Options: nosniff&quot;
+    header.add: &quot;X-XSS-Protection: 1; mode=block&quot;
+    listen:
+      port: 443
+      ssl:
+        certificate-file: /etc/letsencrypt/live/4679.space/fullchain.pem
+        key-file: /etc/letsencrypt/live/4679.space/privkey.pem
+        dh-file: /etc/ssl/certs/dhparam2048.pem
+        minimum-version: TLSv1
+        cipher-preference: server
+        cipher-suite: CHACHA20 EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS !RC4
+    paths:
+      /:
+        file.dir: /home/www/
+
+  &quot;4679.space:80&quot;:
+    listen:
+      port: 80
+    paths:
+      /:
+        redirect:
+          status: 301
+          url: &quot;https://4679.space/&quot;
+
+</code></pre>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/4679kun">
+                        <img class="avatar" src="https://libnull.com/images/avatar.png">
+                        <div>
+                            <span class="dark">4679kun</span>
+                            <span>I&#39;m an Badass.</span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flibnull.com%2fpost%2fh2o%2f - %e6%9c%8d%e5%8a%a1%e5%99%a8%e5%90%8e%e7%ab%af%e5%88%87%e6%8d%a2%e5%88%b0H2O by @4679kun"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = '4679';
+    var disqus_identifier = 'https:\/\/libnull.com\/post\/h2o\/';
+    var disqus_title = '服务器后端切换到H2O';
+    var disqus_url = 'https:\/\/libnull.com\/post\/h2o\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="https://libnull.com/post/domain-changed/">换域名了<aside class="dates">Apr 5</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/linux-deploy/">在Android上使用Linux图形界面<aside class="dates">Mar 26</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/certificate-transparency/">博客启用Certificate Transparency<aside class="dates">Mar 1</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/google-mirror/">搭建了个Google反向代理<aside class="dates">Jan 29</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/blog-reborn/">博客复活了<aside class="dates">Jan 26</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/oh-my-termux/">oh my termux<aside class="dates">Jan 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/storage-space-running-out/">干掉安卓烦人的 存储空间不足 的通知<aside class="dates">Dec 22</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/vimrc/">一份简洁 优雅的vim配置<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/move-to-hugo/">迁移到Hugo<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/page/about/">关于我<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.dribbble.com/">
+        circledribble
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        circlefacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 4679kun
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://libnull.com/js/main.js"></script>
+<script src="https://libnull.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>

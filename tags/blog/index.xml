@@ -5,16 +5,16 @@
     <link>https://libnull.com/tags/blog/</link>
     <description>Recent content in Blog on Libnull</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 05 Apr 2016 15:08:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>换域名了</title>
-      <link>https://libnull.com/domain-changed/</link>
+      <link>https://libnull.com/post/domain-changed/</link>
       <pubDate>Tue, 05 Apr 2016 15:08:00 +0800</pubDate>
       
-      <guid>https://libnull.com/domain-changed/</guid>
+      <guid>https://libnull.com/post/domain-changed/</guid>
       <description>&lt;p&gt;之前用的.space太小众 正好今天看到了name.com首年免费的消息 吓得我立马注册了个.com的&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/ac-haipa.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;害怕&#34; /&gt;&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>博客启用Certificate Transparency</title>
-      <link>https://libnull.com/certificate-transparency/</link>
+      <link>https://libnull.com/post/certificate-transparency/</link>
       <pubDate>Tue, 01 Mar 2016 08:59:03 +0800</pubDate>
       
-      <guid>https://libnull.com/certificate-transparency/</guid>
+      <guid>https://libnull.com/post/certificate-transparency/</guid>
       <description>&lt;p&gt;谷歌爸爸的东西 当然要兹磁啦&lt;/p&gt;
 
 &lt;p&gt;参考了这两篇文章&lt;/p&gt;
@@ -51,10 +51,10 @@
     
     <item>
       <title>博客复活了</title>
-      <link>https://libnull.com/blog-reborn/</link>
+      <link>https://libnull.com/post/blog-reborn/</link>
       <pubDate>Tue, 26 Jan 2016 19:28:45 +0800</pubDate>
       
-      <guid>https://libnull.com/blog-reborn/</guid>
+      <guid>https://libnull.com/post/blog-reborn/</guid>
       <description>&lt;p&gt;前几天上VPS 发现我Hugo的文件夹不见了&lt;/p&gt;
 
 &lt;p&gt;当时我就懵逼了 还好文章的源文件都在github&lt;/p&gt;
@@ -67,20 +67,20 @@
     
     <item>
       <title>迁移到Hugo</title>
-      <link>https://libnull.com/move-to-hugo/</link>
+      <link>https://libnull.com/post/move-to-hugo/</link>
       <pubDate>Mon, 21 Dec 2015 18:30:19 +0800</pubDate>
       
-      <guid>https://libnull.com/move-to-hugo/</guid>
+      <guid>https://libnull.com/post/move-to-hugo/</guid>
       <description>&lt;p&gt;第二次迁移博客了 这次迁移到了Hugo 一款用go语言编写的静态博客生成器 优点是效率比Hexo高太多 之前每次生成博客需要两三秒 现在只用1秒不到 不过目前还没有用于Hexo的迁移方案 全是我手动迁移的 累死了(´_ゝ`)&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>给博客做了个镜像</title>
-      <link>https://libnull.com/mirror/</link>
+      <link>https://libnull.com/post/mirror/</link>
       <pubDate>Wed, 09 Dec 2015 15:56:05 +0800</pubDate>
       
-      <guid>https://libnull.com/mirror/</guid>
+      <guid>https://libnull.com/post/mirror/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://borderland.me&#34;&gt;&amp;mdash;&amp;mdash;&amp;ndash;这里&amp;mdash;&amp;mdash;&amp;ndash;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;放在github 速度应该还不错
@@ -90,10 +90,10 @@
     
     <item>
       <title>服务器后端切换到H2O</title>
-      <link>https://libnull.com/h2o/</link>
+      <link>https://libnull.com/post/h2o/</link>
       <pubDate>Sat, 05 Dec 2015 12:20:53 +0800</pubDate>
       
-      <guid>https://libnull.com/h2o/</guid>
+      <guid>https://libnull.com/post/h2o/</guid>
       <description>&lt;p&gt;H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2&lt;/p&gt;
 
 &lt;p&gt;Archlinux用户直接从AUR安装就可以了
@@ -232,10 +232,10 @@ hosts:
     
     <item>
       <title>转投到Hexo</title>
-      <link>https://libnull.com/move-to-hexo/</link>
+      <link>https://libnull.com/post/move-to-hexo/</link>
       <pubDate>Fri, 06 Nov 2015 00:55:31 +0800</pubDate>
       
-      <guid>https://libnull.com/move-to-hexo/</guid>
+      <guid>https://libnull.com/post/move-to-hexo/</guid>
       <description>&lt;p&gt;迁移到了Hexo 感觉不错&lt;/p&gt;
 </description>
     </item>

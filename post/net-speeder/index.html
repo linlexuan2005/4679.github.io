@@ -1,0 +1,259 @@
+    <!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="4679kun">
+		<meta name="description" content="Nothing Here">
+		<meta name="generator" content="Hugo 0.15" />
+		<title>使用net-speeder缓解vps高延迟 高丢包率 &middot; Libnull</title>
+		<link rel="shortcut icon" href="https://libnull.com/images/favicon.ico">
+		<link rel="stylesheet" href="https://libnull.com/css/style.css">
+		<link rel="stylesheet" href="https://libnull.com/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://libnull.com/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://libnull.com/index.xml" rel="alternate" type="application/rss+xml" title="Libnull" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://libnull.com/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://libnull.com/about'>About</a>
+	
+
+	
+	<a class="cta" href="https://libnull.com/index.xml">RSS</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>使用net-speeder缓解vps高延迟 高丢包率</h1>
+                    <h2 class="headline">December 4, 2015</h2>
+                </header>
+                <section id="post-body">
+                    <p>net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了</p>
+
+<p><a href="https://github.com/snooda/net-speeder">项目地址</a></p>
+
+<p>首先安装依赖 libnet， libpcap</p>
+
+<pre><code class="language-bash">sudo pacman -Sy libnet libpcap
+</code></pre>
+
+<p>每个发行版安装方法都不同 就不一一说明了</p>
+
+<p>之后就是获取源代码了</p>
+
+<pre><code class="language-bash">git clone https://github.com/snooda/net-speeder
+cd net-speeder
+</code></pre>
+
+<p>然后编译</p>
+
+<p>vps架构是openvz的</p>
+
+<pre><code class="language-bash">sh build.sh -DCOOKED
+</code></pre>
+
+<p>vps是Xen,KVM或者是物理机的</p>
+
+<pre><code class="language-bash">sh build.sh
+</code></pre>
+
+<p>编译完成后 就可以运行了</p>
+
+<p>首先获取root权限</p>
+
+<pre><code class="language-bash">su
+</code></pre>
+
+<p>使用方法</p>
+
+<pre><code class="language-bash">./net_speeder 网卡名 加速规则（bpf规则)
+</code></pre>
+
+<p>最简单的使用方法（对于OpenVZ）</p>
+
+<pre><code class="language-bash"> ./net_speeder venet0 &quot;ip&quot;
+</code></pre>
+
+<p>ping一下看看效果吧:-)</p>
+
+<p>PS:对SS也有效哦</p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                <a href="https://twitter.com/4679kun">
+                        <img class="avatar" src="https://libnull.com/images/avatar.png">
+                        <div>
+                            <span class="dark">4679kun</span>
+                            <span>I&#39;m an Badass.</span>
+                        </div>
+                    </a>
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flibnull.com%2fpost%2fnet-speeder%2f - %e4%bd%bf%e7%94%a8net-speeder%e7%bc%93%e8%a7%a3vps%e9%ab%98%e5%bb%b6%e8%bf%9f%20%e9%ab%98%e4%b8%a2%e5%8c%85%e7%8e%87 by @4679kun"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = '4679';
+    var disqus_identifier = 'https:\/\/libnull.com\/post\/net-speeder\/';
+    var disqus_title = '使用net-speeder缓解vps高延迟 高丢包率';
+    var disqus_url = 'https:\/\/libnull.com\/post\/net-speeder\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="https://libnull.com/post/domain-changed/">换域名了<aside class="dates">Apr 5</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/linux-deploy/">在Android上使用Linux图形界面<aside class="dates">Mar 26</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/certificate-transparency/">博客启用Certificate Transparency<aside class="dates">Mar 1</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/google-mirror/">搭建了个Google反向代理<aside class="dates">Jan 29</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/blog-reborn/">博客复活了<aside class="dates">Jan 26</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/oh-my-termux/">oh my termux<aside class="dates">Jan 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/storage-space-running-out/">干掉安卓烦人的 存储空间不足 的通知<aside class="dates">Dec 22</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/vimrc/">一份简洁 优雅的vim配置<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/post/move-to-hugo/">迁移到Hugo<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://libnull.com/page/about/">关于我<aside class="dates">Dec 21</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.dribbble.com/">
+        circledribble
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        circlefacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 4679kun
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://libnull.com/js/main.js"></script>
+<script src="https://libnull.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>
