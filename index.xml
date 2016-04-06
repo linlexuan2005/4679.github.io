@@ -6,8 +6,35 @@
     <description>Recent content on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Apr 2016 15:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2016 14:55:00 +0800</lastBuildDate>
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>记一次拿下一台朝鲜服务器</title>
+      <link>https://4679.space/hack/</link>
+      <pubDate>Wed, 06 Apr 2016 14:55:00 +0800</pubDate>
+      
+      <guid>https://4679.space/hack/</guid>
+      <description>&lt;p&gt;昨晚在V2ex看到&lt;a href=&#34;https://www.v2ex.com/t/268389&#34;&gt;一篇帖子&lt;/a&gt; 当时我就震惊了&lt;/p&gt;
+
+&lt;p&gt;然后我就看到了楼主发的ip段 我就决定自己动手玩玩&lt;/p&gt;
+
+&lt;p&gt;楼主提到了他开启了3389端口 我就以这个为目标开始扫描&lt;/p&gt;
+
+&lt;p&gt;我用到的端口扫描工具是&lt;a href=&#34;https://github.com/robertdavidgraham/masscan&#34;&gt;masscan&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;masscan 175.45.176.0/24 -p3389
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有结果了 直接访问扫出来的ip 看到了老版本的XAMPP&lt;/p&gt;
+
+&lt;p&gt;查看phpinfo页面 看到了文件实际地址&lt;/p&gt;
+
+&lt;p&gt;之后进入phpmyadmin 一句话webshell 开启telnet 修改admin密码 开启3389 拿下&lt;/p&gt;
+
+&lt;p&gt;三胖会不会用大浦洞轰我呢😊&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>换域名了</title>
@@ -15,11 +42,13 @@
       <pubDate>Tue, 05 Apr 2016 15:08:00 +0800</pubDate>
       
       <guid>https://4679.space/domain-changed/</guid>
-      <description>&lt;p&gt;之前用的.space太小众 正好今天看到了name.com首年免费的消息 吓得我立马注册了个.com的&lt;/p&gt;
+      <description>&lt;p&gt;&amp;ndash;之前用的.space太小众 正好今天看到了name.com首年免费的消息 吓得我立马注册了个.com的&amp;ndash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/ac-haipa.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;害怕&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;之前的4679.space直接301过来了 评论用disqus的工具迁移了&lt;/p&gt;
+&lt;p&gt;&amp;ndash;之前的4679.space直接301过来了 评论用disqus的工具迁移了&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;淦你娘的name.com 把我账号关了 说我滥用 玩不起就不要玩 一生黑&lt;/p&gt;
 </description>
     </item>
     
@@ -526,57 +555,6 @@ hosts:
           url: &amp;quot;https://4679.space/&amp;quot;
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Let&#39;s Encrypt试用笔记</title>
-      <link>https://4679.space/lets-encrypt/</link>
-      <pubDate>Fri, 04 Dec 2015 13:27:52 +0800</pubDate>
-      
-      <guid>https://4679.space/lets-encrypt/</guid>
-      <description>&lt;p&gt;昨天 也就是12月3日 Let&amp;rsquo;s Encrypt项目正式启动了Public Beta 这意味着以后每个人都能用上免费的SSL证书这实在是一件大好事 下面是我的试用体验&lt;/p&gt;
-
-&lt;p&gt;首先 我们要获取Let&amp;rsquo;s Encrypt的客户端&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/letsencrypt/letsencrypt
-cd letsencrypt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;之后就可以签发证书了&lt;/p&gt;
-
-&lt;p&gt;首先 获得root权限&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;之后 停掉占用了80和443端口的web服务器
-这里取决于各位使用的操作系统与web服务器 我用的是Archlinux+Nginx&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;systemctl stop nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后就是签发证书了 （不支持泛域名）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./letsencrypt-auto -d 你的域名 certonly
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;等待一阵过后 你的证书就在&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/etc/letsencrypt/live/你的域名/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;里面等着你了 赶快修改你的服务器配置文件来使用它吧&lt;/p&gt;
-
-&lt;p&gt;最后上一张效果图
-&lt;img src=&#34;https://dn-4679kun.qbox.me/Screenshot_20151204-131901.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;效果图&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;PS:证书的有效期是3个月 记得续签哦&lt;/p&gt;
-
-&lt;p&gt;感谢Mozilla以及项目赞助者还有开发者们为了给我们带来更安全的互联网所做出的贡献！&lt;/p&gt;
-
-&lt;p&gt;本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-)
-&lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg?imageView2/2/q/85/format/jpg&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

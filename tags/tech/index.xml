@@ -6,8 +6,35 @@
     <description>Recent content in Tech on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 26 Mar 2016 18:58:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2016 14:55:00 +0800</lastBuildDate>
     <atom:link href="https://4679.space/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>记一次拿下一台朝鲜服务器</title>
+      <link>https://4679.space/hack/</link>
+      <pubDate>Wed, 06 Apr 2016 14:55:00 +0800</pubDate>
+      
+      <guid>https://4679.space/hack/</guid>
+      <description>&lt;p&gt;昨晚在V2ex看到&lt;a href=&#34;https://www.v2ex.com/t/268389&#34;&gt;一篇帖子&lt;/a&gt; 当时我就震惊了&lt;/p&gt;
+
+&lt;p&gt;然后我就看到了楼主发的ip段 我就决定自己动手玩玩&lt;/p&gt;
+
+&lt;p&gt;楼主提到了他开启了3389端口 我就以这个为目标开始扫描&lt;/p&gt;
+
+&lt;p&gt;我用到的端口扫描工具是&lt;a href=&#34;https://github.com/robertdavidgraham/masscan&#34;&gt;masscan&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;masscan 175.45.176.0/24 -p3389
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有结果了 直接访问扫出来的ip 看到了老版本的XAMPP&lt;/p&gt;
+
+&lt;p&gt;查看phpinfo页面 看到了文件实际地址&lt;/p&gt;
+
+&lt;p&gt;之后进入phpmyadmin 一句话webshell 开启telnet 修改admin密码 开启3389 拿下&lt;/p&gt;
+
+&lt;p&gt;三胖会不会用大浦洞轰我呢😊&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>在Android上使用Linux图形界面</title>

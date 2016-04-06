@@ -6,8 +6,35 @@
     <description>Recent content in Posts on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Apr 2016 15:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2016 14:55:00 +0800</lastBuildDate>
     <atom:link href="https://4679.space/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>记一次拿下一台朝鲜服务器</title>
+      <link>https://4679.space/hack/</link>
+      <pubDate>Wed, 06 Apr 2016 14:55:00 +0800</pubDate>
+      
+      <guid>https://4679.space/hack/</guid>
+      <description>&lt;p&gt;昨晚在V2ex看到&lt;a href=&#34;https://www.v2ex.com/t/268389&#34;&gt;一篇帖子&lt;/a&gt; 当时我就震惊了&lt;/p&gt;
+
+&lt;p&gt;然后我就看到了楼主发的ip段 我就决定自己动手玩玩&lt;/p&gt;
+
+&lt;p&gt;楼主提到了他开启了3389端口 我就以这个为目标开始扫描&lt;/p&gt;
+
+&lt;p&gt;我用到的端口扫描工具是&lt;a href=&#34;https://github.com/robertdavidgraham/masscan&#34;&gt;masscan&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;masscan 175.45.176.0/24 -p3389
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有结果了 直接访问扫出来的ip 看到了老版本的XAMPP&lt;/p&gt;
+
+&lt;p&gt;查看phpinfo页面 看到了文件实际地址&lt;/p&gt;
+
+&lt;p&gt;之后进入phpmyadmin 一句话webshell 开启telnet 修改admin密码 开启3389 拿下&lt;/p&gt;
+
+&lt;p&gt;三胖会不会用大浦洞轰我呢😊&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>换域名了</title>
@@ -15,11 +42,13 @@
       <pubDate>Tue, 05 Apr 2016 15:08:00 +0800</pubDate>
       
       <guid>https://4679.space/domain-changed/</guid>
-      <description>&lt;p&gt;之前用的.space太小众 正好今天看到了name.com首年免费的消息 吓得我立马注册了个.com的&lt;/p&gt;
+      <description>&lt;p&gt;&amp;ndash;之前用的.space太小众 正好今天看到了name.com首年免费的消息 吓得我立马注册了个.com的&amp;ndash;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://dn-4679kun.qbox.me/ac-haipa.png?imageView2/2/q/85/format/jpg&#34; alt=&#34;害怕&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;之前的4679.space直接301过来了 评论用disqus的工具迁移了&lt;/p&gt;
+&lt;p&gt;&amp;ndash;之前的4679.space直接301过来了 评论用disqus的工具迁移了&amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;淦你娘的name.com 把我账号关了 说我滥用 玩不起就不要玩 一生黑&lt;/p&gt;
 </description>
     </item>
     
@@ -558,64 +587,6 @@ cd letsencrypt
 
 &lt;p&gt;本文是我在午睡的时候睡不着用48元包邮的渣想BKC600蓝牙键盘写下的 手感还不错:-)
 &lt;img src=&#34;https://dn-4679kun.qbox.me/IMG_20151204_132028.jpg?imageView2/2/q/85/format/jpg&#34; alt=&#34;BKC600&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>使用net-speeder缓解vps高延迟 高丢包率</title>
-      <link>https://4679.space/net-speeder/</link>
-      <pubDate>Fri, 04 Dec 2015 10:50:51 +0800</pubDate>
-      
-      <guid>https://4679.space/net-speeder/</guid>
-      <description>&lt;p&gt;net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/snooda/net-speeder&#34;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;首先安装依赖 libnet， libpcap&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo pacman -Sy libnet libpcap
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;每个发行版安装方法都不同 就不一一说明了&lt;/p&gt;
-
-&lt;p&gt;之后就是获取源代码了&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/snooda/net-speeder
-cd net-speeder
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后编译&lt;/p&gt;
-
-&lt;p&gt;vps架构是openvz的&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sh build.sh -DCOOKED
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;vps是Xen,KVM或者是物理机的&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sh build.sh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;编译完成后 就可以运行了&lt;/p&gt;
-
-&lt;p&gt;首先获取root权限&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;su
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;使用方法&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;./net_speeder 网卡名 加速规则（bpf规则)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最简单的使用方法（对于OpenVZ）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; ./net_speeder venet0 &amp;quot;ip&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ping一下看看效果吧:-)&lt;/p&gt;
-
-&lt;p&gt;PS:对SS也有效哦&lt;/p&gt;
 </description>
     </item>
     

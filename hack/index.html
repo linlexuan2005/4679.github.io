@@ -7,7 +7,7 @@
 		<meta name="author" content="4679kun">
 		<meta name="description" content="Nothing Here">
 		<meta name="generator" content="Hugo 0.15" />
-		<title>关于我 &middot; 4679&#39;s Blog</title>
+		<title>记一次拿下一台朝鲜服务器 &middot; 4679&#39;s Blog</title>
         <link rel="shortcut icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" type="image/x-icon">
 		<link rel="stylesheet" href="https://4679.space/css/style.css">
 		<link rel="stylesheet" href="https://4679.space/css/highlight.css">
@@ -30,6 +30,8 @@
 	
 
 	
+		<a href='https://4679.space/page/about/'>关于</a>
+	
 
 	
 		<a href='https://4679.space/page/friends/'>挚友</a>
@@ -44,20 +46,28 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>关于我</h1>
-                    <h2 class="headline">2015年 12月 21日</h2>
+                    <h1>记一次拿下一台朝鲜服务器</h1>
+                    <h2 class="headline">2016年 4月 6日</h2>
                 </header>
                 <section id="post-body">
-                    <ul>
-<li>高三学渣
+                    <p>昨晚在V2ex看到<a href="https://www.v2ex.com/t/268389">一篇帖子</a> 当时我就震惊了</p>
 
-<ul>
-<li>Archlinux用户 <a href="https://aur.archlinux.org/account/4679kun/">AUR</a></li>
-<li><a href="http://weibo.cn/u/1963942417">微博</a></li>
-<li><a href="https://github.com/4679">Github</a></li>
-<li>邮箱 4679kun@outlook.com</li>
-</ul></li>
-</ul>
+<p>然后我就看到了楼主发的ip段 我就决定自己动手玩玩</p>
+
+<p>楼主提到了他开启了3389端口 我就以这个为目标开始扫描</p>
+
+<p>我用到的端口扫描工具是<a href="https://github.com/robertdavidgraham/masscan">masscan</a></p>
+
+<pre><code>masscan 175.45.176.0/24 -p3389
+</code></pre>
+
+<p>有结果了 直接访问扫出来的ip 看到了老版本的XAMPP</p>
+
+<p>查看phpinfo页面 看到了文件实际地址</p>
+
+<p>之后进入phpmyadmin 一句话webshell 开启telnet 修改admin密码 开启3389 拿下</p>
+
+<p>三胖会不会用大浦洞轰我呢😊</p>
 
                 </section>
             </article>
@@ -70,7 +80,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2fpage%2fabout%2f - %e5%85%b3%e4%ba%8e%e6%88%91 by @4679kun"><span class="icon-twitter"> 发推</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2fhack%2f - %e8%ae%b0%e4%b8%80%e6%ac%a1%e6%8b%bf%e4%b8%8b%e4%b8%80%e5%8f%b0%e6%9c%9d%e9%b2%9c%e6%9c%8d%e5%8a%a1%e5%99%a8 by @4679kun"><span class="icon-twitter"> 发推</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
