@@ -7,7 +7,7 @@
 		<meta name="author" content="4679kun">
 		<meta name="description" content="Nothing Here">
 		<meta name="generator" content="Hugo 0.15" />
-		<title>博客启用Certificate Transparency &middot; 4679&#39;s Blog</title>
+		<title>客户端加密的代码剪切板 &middot; 4679&#39;s Blog</title>
         <link rel="shortcut icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" type="image/x-icon">
 		<link rel="stylesheet" href="https://dn-4679kun.qbox.me/cactus/css/style.css">
 		<link rel="stylesheet" href="https://dn-4679kun.qbox.me/cactus/css/highlight.css">
@@ -44,27 +44,23 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>博客启用Certificate Transparency</h1>
-                    <h2 class="headline">2016年 3月 1日</h2>
+                    <h1>客户端加密的代码剪切板</h1>
+                    <h2 class="headline">2016年 4月 10日</h2>
                 </header>
                 <section id="post-body">
-                    <p>谷歌爸爸的东西 当然要兹磁啦</p>
+                    <p>闲着无聊像搭个代码剪切板玩玩,结果在github上发现了这货</p>
 
-<p>参考了这两篇文章</p>
+<p><a href="https://github.com/sametmax/0bin/">0bin</a></p>
 
-<p><a href="http://blog.eqoe.cn/posts/enable-certificate-transparency-for-nginx.html">为 SSL 站点启用 Certificate Transparency 功能</a></p>
+<p>亮点就是在浏览器进行AES-256加密,服务器无法获知上传的内容,并且支持阅后即焚</p>
 
-<p><a href="https://imququ.com/post/certificate-transparency.html">Certificate Transparency 那些事</a></p>
+<p>于是我就搭了一个,并汉化了下</p>
 
-<p>你们现在看到的服务器信息应该是这样</p>
+<p><a href="https://paste.4679.space/">这是地址</a></p>
 
-<p><img src="https://dn-4679kun.qbox.me/ct%2FScreenshot_20160301-090031.png?imageView2/2/q/85/format/jpg" alt="info" /></p>
+<p>各位可以体验一下 还挺不错的</p>
 
-<p>这是我用的服务端 <a href="https://aur.archlinux.org/packages/nginx-mainline-mod4679/">nginx-mainline-mod4679</a></p>
-
-<p>nginx+OpenSSL(Cloudflare的补丁)+google反代模块+Certificate Transparency模块</p>
-
-<p>另外婊一下cloudflare在国内的速度 现在直连比之前走cloudflare快多了</p>
+<p>PS:可以粘贴图片哦</p>
 
                 </section>
             </article>
@@ -77,7 +73,7 @@
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2fcertificate-transparency%2f - %e5%8d%9a%e5%ae%a2%e5%90%af%e7%94%a8Certificate%20Transparency by @4679kun"><span class="icon-twitter"> 发推</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2f0bin%2f - %e5%ae%a2%e6%88%b7%e7%ab%af%e5%8a%a0%e5%af%86%e7%9a%84%e4%bb%a3%e7%a0%81%e5%89%aa%e5%88%87%e6%9d%bf by @4679kun"><span class="icon-twitter"> 发推</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

@@ -6,8 +6,30 @@
     <description>Recent content on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Apr 2016 14:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Apr 2016 13:07:03 +0800</lastBuildDate>
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>客户端加密的代码剪切板</title>
+      <link>https://4679.space/0bin/</link>
+      <pubDate>Sun, 10 Apr 2016 13:07:03 +0800</pubDate>
+      
+      <guid>https://4679.space/0bin/</guid>
+      <description>&lt;p&gt;闲着无聊像搭个代码剪切板玩玩,结果在github上发现了这货&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/sametmax/0bin/&#34;&gt;0bin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;亮点就是在浏览器进行AES-256加密,服务器无法获知上传的内容,并且支持阅后即焚&lt;/p&gt;
+
+&lt;p&gt;于是我就搭了一个,并汉化了下&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://paste.4679.space/&#34;&gt;这是地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;各位可以体验一下 还挺不错的&lt;/p&gt;
+
+&lt;p&gt;PS:可以粘贴图片哦&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>记一次拿下一台朝鲜服务器</title>
@@ -421,148 +443,6 @@ rinetd -c /etc/rinetd.conf
 
 &lt;p&gt;放在github 速度应该还不错
 要是vps抽风的话 就访问这个吧&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>服务器后端切换到H2O</title>
-      <link>https://4679.space/h2o/</link>
-      <pubDate>Sat, 05 Dec 2015 12:20:53 +0800</pubDate>
-      
-      <guid>https://4679.space/h2o/</guid>
-      <description>&lt;p&gt;H2O是一款轻量 配置简单的HTTP服务器 特色就是HTTP/2&lt;/p&gt;
-
-&lt;p&gt;Archlinux用户直接从AUR安装就可以了
-其他系统请自行寻找源或者编译安装&lt;/p&gt;
-
-&lt;p&gt;下面是我的配置文件 可以当个示范&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-YAML&#34;&gt;access-log: /dev/null 
-error-log: /dev/null 
-pid-file: /var/run/h2o.pid
-max-connections: 51200
-file.send-gzip: ON 
-tcp-fastopen: 3 
-user: www
-http2-reprioritize-blocking-assets: ON 
-file.index: [ &#39;index.php&#39;, &#39;index.html&#39; ]
-file.mime.addtypes: 
-    text/html: .html .htm .shtml
-    text/css: .css
-    text/xml: .xml
-    image/gif: .gif
-    image/jpeg: .jpeg .jpg
-    application/javascript: .js
-    application/atom+xml: .atom
-    application/rss+xml: .rss
-
-    text/mathml: .mml
-    text/plain: .txt
-    text/vnd.sun.j2me.app-descriptor: .jad
-    text/vnd.wap.wml: .wml
-    text/x-component: .htc
-
-    image/png: .png
-    image/tiff: .tif .tiff
-    image/vnd.wap.wbmp: .wbmp
-    image/x-icon: .ico
-    image/x-jng: .jng
-    image/x-ms-bmp: .bmp
-    image/svg+xml: .svg .svgz
-    image/webp: .webp
-
-    application/font-woff: .woff
-    application/java-archive: .jar .war .ear
-    application/json: .json
-    application/mac-binhex40: .hqx
-    application/msword: .doc
-    application/pdf: .pdf
-    application/postscript: .ps .eps .ai
-    application/rtf: .rtf
-    application/vnd.apple.mpegurl: .m3u8
-    application/vnd.ms-excel: .xls
-    application/vnd.ms-fontobject: .eot
-    application/vnd.ms-powerpoint: .ppt
-    application/vnd.wap.wmlc: .wmlc
-    application/vnd.google-earth.kml+xml: .kml
-    application/vnd.google-earth.kmz: .kmz
-    application/x-7z-compressed: .7z
-    application/x-cocoa: .cco
-    application/x-java-archive-diff: .jardiff
-    application/x-java-jnlp-file: .jnlp
-    application/x-makeself: .run
-    application/x-perl: .pl .pm
-    application/x-pilot: .prc .pdb
-    application/x-rar-compressed: .rar
-    application/x-redhat-package-manager: .rpm
-    application/x-sea: .sea
-    application/x-shockwave-flash: .swf
-    application/x-stuffit: .sit
-    application/x-tcl: .tcl .tk
-    application/x-x509-ca-cert: .der .pem .crt
-    application/x-xpinstall: .xpi
-    application/xhtml+xml: .xhtml
-    application/xspf+xml: .xspf
-    application/zip: .zip
-
-    application/octet-stream: .bin .exe .dll
-    application/octet-stream: .deb
-    application/octet-stream: .dmg
-    application/octet-stream: .iso .img
-    application/octet-stream: .msi .msp .msm
-
-    application/vnd.openxmlformats-officedocument.wordprocessingml.document: .docx
-    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet: .xlsx
-    application/vnd.openxmlformats-officedocument.presentationml.presentation: .pptx
-
-    audio/midi: .mid .midi .kar
-    audio/mpeg: .mp3
-    audio/ogg: .ogg
-    audio/x-m4a: .m4a
-    audio/x-realaudio: .ra
-
-    video/3gpp: .3gpp .3gp
-    video/mp2t: .ts
-    video/mp4: .mp4
-    video/mpeg: .mpeg .mpg
-    video/quicktime: .mov
-    video/webm: .webm
-    video/x-flv: .flv
-    video/x-m4v: .m4v
-    video/x-mng: .mng
-    video/x-ms-asf: .asx .asf
-    video/x-ms-wmv: .wmv
-    video/x-msvideo: .avi
-
-hosts:
-  &amp;quot;4679.space:443&amp;quot;: 
-    header.add: &amp;quot;strict-transport-security: max-age=39420000; includesubdomains; preload&amp;quot; 
-    header.add: &amp;quot;X-Frame-Options: SAMEORIGIN&amp;quot;
-    header.add: &amp;quot;X-Content-Type-Options: nosniff&amp;quot;
-    header.add: &amp;quot;X-XSS-Protection: 1; mode=block&amp;quot;
-    listen:
-      port: 443
-      ssl:
-        certificate-file: /etc/letsencrypt/live/4679.space/fullchain.pem
-        key-file: /etc/letsencrypt/live/4679.space/privkey.pem
-        dh-file: /etc/ssl/certs/dhparam2048.pem
-        minimum-version: TLSv1
-        cipher-preference: server
-        cipher-suite: CHACHA20 EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS !RC4
-    paths:
-      /:
-        file.dir: /home/www/
-
-  &amp;quot;4679.space:80&amp;quot;:
-    listen:
-      port: 80
-    paths:
-      /:
-        redirect:
-          status: 301
-          url: &amp;quot;https://4679.space/&amp;quot;
-
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

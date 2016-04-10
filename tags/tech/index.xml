@@ -6,8 +6,30 @@
     <description>Recent content in Tech on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 06 Apr 2016 14:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Apr 2016 13:07:03 +0800</lastBuildDate>
     <atom:link href="https://4679.space/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>客户端加密的代码剪切板</title>
+      <link>https://4679.space/0bin/</link>
+      <pubDate>Sun, 10 Apr 2016 13:07:03 +0800</pubDate>
+      
+      <guid>https://4679.space/0bin/</guid>
+      <description>&lt;p&gt;闲着无聊像搭个代码剪切板玩玩,结果在github上发现了这货&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/sametmax/0bin/&#34;&gt;0bin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;亮点就是在浏览器进行AES-256加密,服务器无法获知上传的内容,并且支持阅后即焚&lt;/p&gt;
+
+&lt;p&gt;于是我就搭了一个,并汉化了下&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://paste.4679.space/&#34;&gt;这是地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;各位可以体验一下 还挺不错的&lt;/p&gt;
+
+&lt;p&gt;PS:可以粘贴图片哦&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>记一次拿下一台朝鲜服务器</title>
