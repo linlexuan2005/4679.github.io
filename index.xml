@@ -6,8 +6,26 @@
     <description>Recent content on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 10 Apr 2016 13:07:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Apr 2016 15:21:00 +0800</lastBuildDate>
     <atom:link href="https://4679.space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>弄了个新图床</title>
+      <link>https://4679.space/new-image-host/</link>
+      <pubDate>Tue, 12 Apr 2016 15:21:00 +0800</pubDate>
+      
+      <guid>https://4679.space/new-image-host/</guid>
+      <description>&lt;p&gt;我在看了V2EX上的&lt;a href=&#34;https://www.v2ex.com/t/269463&#34;&gt;这个帖子&lt;/a&gt;之后 我慌了 万一哪天有人来刷我怎么办&lt;/p&gt;
+
+&lt;p&gt;于是 &lt;a href=&#34;https://img.4679.space&#34;&gt;我给自己搭了个图床&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;搭在OpenShift上 走Cliudflare CDN 有1G空间 也够我用了&lt;/p&gt;
+
+&lt;p&gt;系统用的Lychee &lt;a href=&#34;https://github.com/gautamkrishnar/Lychee-openshift-quickstart&#34;&gt;一键安装&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我这移动网 速度还不错&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>客户端加密的代码剪切板</title>
@@ -430,19 +448,6 @@ rinetd -c /etc/rinetd.conf
 &lt;p&gt;重启之后 之前开启的SS转发也被关了 再开启一遍就行&lt;/p&gt;
 
 &lt;p&gt;这个方法可以用于转发任何端口&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>给博客做了个镜像</title>
-      <link>https://4679.space/mirror/</link>
-      <pubDate>Wed, 09 Dec 2015 15:56:05 +0800</pubDate>
-      
-      <guid>https://4679.space/mirror/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://borderland.me&#34;&gt;&amp;mdash;&amp;mdash;&amp;ndash;这里&amp;mdash;&amp;mdash;&amp;ndash;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;放在github 速度应该还不错
-要是vps抽风的话 就访问这个吧&lt;/p&gt;
 </description>
     </item>
     

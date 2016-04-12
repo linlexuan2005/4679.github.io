@@ -7,7 +7,7 @@
 		<meta name="author" content="4679kun">
 		<meta name="description" content="Nothing Here">
 		<meta name="generator" content="Hugo 0.15" />
-		<title>使用net-speeder缓解vps高延迟 高丢包率 &middot; 4679&#39;s Blog</title>
+		<title>弄了个新图床 &middot; 4679&#39;s Blog</title>
         <link rel="shortcut icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" type="image/x-icon">
 		<link rel="stylesheet" href="https://dn-4679kun.qbox.me/cactus/css/style.css">
 		<link rel="stylesheet" href="https://dn-4679kun.qbox.me/cactus/css/highlight.css">
@@ -44,59 +44,19 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>使用net-speeder缓解vps高延迟 高丢包率</h1>
-                    <h2 class="headline">2015年 12月 4日</h2>
+                    <h1>弄了个新图床</h1>
+                    <h2 class="headline">2016年 4月 12日</h2>
                 </header>
                 <section id="post-body">
-                    <p>net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了</p>
+                    <p>我在看了V2EX上的<a href="https://www.v2ex.com/t/269463">这个帖子</a>之后 我慌了 万一哪天有人来刷我怎么办</p>
 
-<p><a href="https://github.com/snooda/net-speeder">项目地址</a></p>
+<p>于是 <a href="https://img.4679.space">我给自己搭了个图床</a></p>
 
-<p>首先安装依赖 libnet， libpcap</p>
+<p>搭在OpenShift上 走Cliudflare CDN 有1G空间 也够我用了</p>
 
-<pre><code class="language-bash">sudo pacman -Sy libnet libpcap
-</code></pre>
+<p>系统用的Lychee <a href="https://github.com/gautamkrishnar/Lychee-openshift-quickstart">一键安装</a></p>
 
-<p>每个发行版安装方法都不同 就不一一说明了</p>
-
-<p>之后就是获取源代码了</p>
-
-<pre><code class="language-bash">git clone https://github.com/snooda/net-speeder
-cd net-speeder
-</code></pre>
-
-<p>然后编译</p>
-
-<p>vps架构是openvz的</p>
-
-<pre><code class="language-bash">sh build.sh -DCOOKED
-</code></pre>
-
-<p>vps是Xen,KVM或者是物理机的</p>
-
-<pre><code class="language-bash">sh build.sh
-</code></pre>
-
-<p>编译完成后 就可以运行了</p>
-
-<p>首先获取root权限</p>
-
-<pre><code class="language-bash">su
-</code></pre>
-
-<p>使用方法</p>
-
-<pre><code class="language-bash">./net_speeder 网卡名 加速规则（bpf规则)
-</code></pre>
-
-<p>最简单的使用方法（对于OpenVZ）</p>
-
-<pre><code class="language-bash"> ./net_speeder venet0 &quot;ip&quot;
-</code></pre>
-
-<p>ping一下看看效果吧:-)</p>
-
-<p>PS:对SS也有效哦</p>
+<p>我这移动网 速度还不错</p>
 
                 </section>
             </article>
@@ -109,7 +69,7 @@ cd net-speeder
                         </div>
                     </a>
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2fnet-speeder%2f - %e4%bd%bf%e7%94%a8net-speeder%e7%bc%93%e8%a7%a3vps%e9%ab%98%e5%bb%b6%e8%bf%9f%20%e9%ab%98%e4%b8%a2%e5%8c%85%e7%8e%87 by @4679kun"><span class="icon-twitter"> 发推</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2f4679.space%2fnew-image-host%2f - %e5%bc%84%e4%ba%86%e4%b8%aa%e6%96%b0%e5%9b%be%e5%ba%8a by @4679kun"><span class="icon-twitter"> 发推</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
