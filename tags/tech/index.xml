@@ -17,13 +17,13 @@
       <guid>https://4679.space/0bin/</guid>
       <description>&lt;p&gt;闲着无聊想搭个代码剪切板玩玩,结果在github上发现了这货&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/sametmax/0bin/&#34;&gt;0bin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/sametmax/0bin/&#34; target=&#34;_blank&#34;&gt;0bin&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;亮点就是在浏览器进行AES-256加密,服务器无法获知上传的内容,并且支持阅后即焚&lt;/p&gt;
 
 &lt;p&gt;于是我就搭了一个,并汉化了下&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://paste.4679.space/&#34;&gt;这是地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://paste.4679.space/&#34; target=&#34;_blank&#34;&gt;这是地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;各位可以体验一下 还挺不错的&lt;/p&gt;
 
@@ -41,13 +41,13 @@
 
 &lt;h3 id=&#34;4月7日更新-三胖把网线拔了-ﾟ&#34;&gt;4月7日更新: 三胖把网线拔了|∀ﾟ&lt;/h3&gt;
 
-&lt;p&gt;昨晚在V2ex看到&lt;a href=&#34;https://www.v2ex.com/t/268389&#34;&gt;一篇帖子&lt;/a&gt; 当时我就震惊了&lt;/p&gt;
+&lt;p&gt;昨晚在V2ex看到&lt;a href=&#34;https://www.v2ex.com/t/268389&#34; target=&#34;_blank&#34;&gt;一篇帖子&lt;/a&gt; 当时我就震惊了&lt;/p&gt;
 
 &lt;p&gt;然后我就看到了楼主发的ip段 我就决定自己动手玩玩&lt;/p&gt;
 
 &lt;p&gt;楼主提到了他开启了3389端口 我就以这个为目标开始扫描&lt;/p&gt;
 
-&lt;p&gt;我用到的端口扫描工具是&lt;a href=&#34;https://github.com/robertdavidgraham/masscan&#34;&gt;masscan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我用到的端口扫描工具是&lt;a href=&#34;https://github.com/robertdavidgraham/masscan&#34; target=&#34;_blank&#34;&gt;masscan&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;masscan 175.45.176.0/24 -p3389
 &lt;/code&gt;&lt;/pre&gt;
@@ -83,11 +83,11 @@
 
 &lt;p&gt;具体步骤呢&lt;/p&gt;
 
-&lt;p&gt;1.先用&lt;a href=&#34;http://www.coolapk.com/apk/ru.meefik.linuxdeploy&#34;&gt;Linux Deploy&lt;/a&gt;安装好系统,这个很简单,装好Busybox,在设置里选好选项一键安装就行&lt;/p&gt;
+&lt;p&gt;1.先用&lt;a href=&#34;http://www.coolapk.com/apk/ru.meefik.linuxdeploy&#34; target=&#34;_blank&#34;&gt;Linux Deploy&lt;/a&gt;安装好系统,这个很简单,装好Busybox,在设置里选好选项一键安装就行&lt;/p&gt;
 
-&lt;p&gt;2.安装好&lt;a href=&#34;https://play.google.com/store/apps/details?id=x.org.server&#34;&gt;XServer XSDL&lt;/a&gt;,Android上的X服务器,效率比用VNC好多了&lt;/p&gt;
+&lt;p&gt;2.安装好&lt;a href=&#34;https://play.google.com/store/apps/details?id=x.org.server&#34; target=&#34;_blank&#34;&gt;XServer XSDL&lt;/a&gt;,Android上的X服务器,效率比用VNC好多了&lt;/p&gt;
 
-&lt;p&gt;3.通过ssh连接到装好的系统,客户端我推荐&lt;a href=&#34;http://www.coolapk.com/apk/com.sonelli.juicessh&#34;&gt;JuiceSSH&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.通过ssh连接到装好的系统,客户端我推荐&lt;a href=&#34;http://www.coolapk.com/apk/com.sonelli.juicessh&#34; target=&#34;_blank&#34;&gt;JuiceSSH&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;4.安装好你要使用的桌面,我选择的是i3wm&lt;/p&gt;
 
@@ -99,7 +99,7 @@
 
 &lt;p&gt;8.切换回XServer XSDL,不出意外的话你就能看到桌面了,随意折腾吧～&lt;/p&gt;
 
-&lt;p&gt;PS:图中i3的配置来自于&lt;a href=&#34;https://github.com/ID1258/oh-my-i3&#34;&gt;oh-my-i3&lt;/a&gt;,很好看,赞一个&lt;/p&gt;
+&lt;p&gt;PS:图中i3的配置来自于&lt;a href=&#34;https://github.com/ID1258/oh-my-i3&#34; target=&#34;_blank&#34;&gt;oh-my-i3&lt;/a&gt;,很好看,赞一个&lt;/p&gt;
 </description>
     </item>
     
@@ -111,15 +111,15 @@
       <guid>https://4679.space/google-mirror/</guid>
       <description>
 
-&lt;h2 id=&#34;https-g-4679-space-https-g-4679-space&#34;&gt;&lt;a href=&#34;https://g.4679.space&#34;&gt;https://g.4679.space&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;https-g-4679-space-https-g-4679-space&#34;&gt;&lt;a href=&#34;https://g.4679.space&#34; target=&#34;_blank&#34;&gt;https://g.4679.space&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p&gt;用到了wen.lu提供的&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module&#34;&gt;ngx_http_google_filter_module&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用到了wen.lu提供的&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module&#34; target=&#34;_blank&#34;&gt;ngx_http_google_filter_module&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;del&gt;为了方便安装 我写了个PKGBUILD放在aur上 Arch用户可以直接安装 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-boringssl-google_fliter/&#34;&gt;nginx-mainline-boringssl-google_fliter&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;为了方便安装 我写了个PKGBUILD放在aur上 Arch用户可以直接安装 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-boringssl-google_fliter/&#34; target=&#34;_blank&#34;&gt;nginx-mainline-boringssl-google_fliter&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;这个坑弃了 新的服务端 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-mod4679/&#34;&gt;nginx-mainline-mod4679&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个坑弃了 新的服务端 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-mod4679/&#34; target=&#34;_blank&#34;&gt;nginx-mainline-mod4679&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md&#34;&gt;配置文档在这&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md&#34; target=&#34;_blank&#34;&gt;配置文档在这&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -130,7 +130,7 @@
       
       <guid>https://4679.space/oh-my-termux/</guid>
       <description>&lt;p&gt;Termux是安卓上的一款软件 能提供一个差不多能用的linux环境 值得一提的是 它带有包管理器apt 常用的软件包差不多都有
-我写了个快速配置Termux的脚本 &lt;a href=&#34;https://github.com/4679/oh-my-termux&#34;&gt;oh-my-termux&lt;/a&gt;&lt;/p&gt;
+我写了个快速配置Termux的脚本 &lt;a href=&#34;https://github.com/4679/oh-my-termux&#34; target=&#34;_blank&#34;&gt;oh-my-termux&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -181,7 +181,7 @@
       <guid>https://4679.space/vimrc/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/4679/vimrc/&#34;&gt;点我&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/4679/vimrc/&#34; target=&#34;_blank&#34;&gt;点我&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;用心感受&lt;/p&gt;
 
@@ -310,7 +310,7 @@ cd letsencrypt
       <pubDate>Thu, 03 Dec 2015 20:09:44 +0800</pubDate>
       
       <guid>https://4679.space/ss-speedup/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;转载 &lt;a href=&#34;http://xuqk.tk/251&#34;&gt;原文&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;转载 &lt;a href=&#34;http://xuqk.tk/251&#34; target=&#34;_blank&#34;&gt;原文&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;在国外的vps上架设的SS 难免会掉包 高延迟  目前比较不错的解决办法是用国内的高质量服务器进行转发
 财大气粗的阿里为我们提供了免费的服务器&lt;/p&gt;
@@ -343,7 +343,7 @@ backend ss-out
       <pubDate>Tue, 01 Dec 2015 13:56:08 +0800</pubDate>
       
       <guid>https://4679.space/sign/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://sign.4679.space&#34;&gt;现成的 不想动手的就用这个吧&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://sign.4679.space&#34; target=&#34;_blank&#34;&gt;现成的 不想动手的就用这个吧&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;首先 我们得去注册个Openshift的账号 这个应该不用详细写了 大家应该都会&lt;/p&gt;
 
@@ -361,7 +361,7 @@ backend ss-out
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;https://github.com/puteulanus/tieba-sign-install3
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;这里感谢创世神域写的安装脚本 &lt;a href=&#34;http://www.puteulanus.com/archives/572&#34;&gt;原地址&lt;/a&gt;
+&lt;p&gt;这里感谢创世神域写的安装脚本 &lt;a href=&#34;http://www.puteulanus.com/archives/572&#34; target=&#34;_blank&#34;&gt;原地址&lt;/a&gt;
 &lt;img src=&#34;https://img.4679.space/uploads/big/e8b0688da33678cb728b377658deef95.jpg&#34; alt=&#34;Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Create!&lt;/p&gt;

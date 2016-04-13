@@ -111,7 +111,7 @@ service sslh start
       <guid>https://4679.space/net-speeder/</guid>
       <description>&lt;p&gt;net-speeder是一款开源软件 能显著降低丢包率 原理简单粗暴 就是每个包发两遍 所以 使用的流量也会翻一倍 这就要靠大家取舍了&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/snooda/net-speeder&#34;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/snooda/net-speeder&#34; target=&#34;_blank&#34;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;首先安装依赖 libnet， libpcap&lt;/p&gt;
 
@@ -183,10 +183,10 @@ cd net-speeder
 &lt;p&gt;下面是购买的步骤&lt;/p&gt;
 
 &lt;p&gt;首先麻烦丧尸们先访问一下我的推荐链接 这样你们购买了之后我还能获得一点佣金
-&lt;a href=&#34;https://www.cheapvz.com/aff.php?aff=42&#34;&gt;https://www.cheapvz.com/aff.php?aff=42&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.cheapvz.com/aff.php?aff=42&#34; target=&#34;_blank&#34;&gt;https://www.cheapvz.com/aff.php?aff=42&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;然后这是选购的链接 先把币种切换成CNY 也就是人民币 然后点击立即购买就行啦
-&lt;a href=&#34;https://www.cheapvz.com/cart.php?gid=2&#34;&gt;https://www.cheapvz.com/cart.php?gid=2&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.cheapvz.com/cart.php?gid=2&#34; target=&#34;_blank&#34;&gt;https://www.cheapvz.com/cart.php?gid=2&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;之后就是填写一些表格 这里我只对某些选项说明一下 其他的大家一看就懂
 首先是
@@ -207,7 +207,7 @@ cd net-speeder
 稍等一会 你的邮箱里就会收到一封邮件 里面就有你的vps的ip地址啦&lt;/p&gt;
 
 &lt;p&gt;接下来下载putty 用来连接服务器
-&lt;a href=&#34;https://github.com/larryli/PuTTY/releases/download/putty-0.65cn/putty-0.65cn.zip&#34;&gt;https://github.com/larryli/PuTTY/releases/download/putty-0.65cn/putty-0.65cn.zip&lt;/a&gt;
+&lt;a href=&#34;https://github.com/larryli/PuTTY/releases/download/putty-0.65cn/putty-0.65cn.zip&#34; target=&#34;_blank&#34;&gt;https://github.com/larryli/PuTTY/releases/download/putty-0.65cn/putty-0.65cn.zip&lt;/a&gt;
 下载完成后解压 打开putty.exe
 &lt;img src=&#34;https://img.4679.space/uploads/big/9e627f5c7be9dde127a9ff662ad15f6b.jpg&#34; alt=&#34;5.jpg&#34; /&gt;
 在主机名称处填入ip 然后点击打开
@@ -218,7 +218,7 @@ cd net-speeder
 &lt;img src=&#34;https://img.4679.space/uploads/big/a32c42f1b8d48c19747aa6595b20c8a5.jpg&#34; alt=&#34;6.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;现在就可以安装shadowsocks了
-我使用的是秋水逸冰大大的一键安装脚本 &lt;a href=&#34;https://teddysun.com/358.html&#34;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+我使用的是秋水逸冰大大的一键安装脚本 &lt;a href=&#34;https://teddysun.com/358.html&#34; target=&#34;_blank&#34;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;首先安装依赖（复制之后点击右键就是粘贴）&lt;/p&gt;
 
@@ -266,7 +266,7 @@ cd net-speeder
       <description>&lt;p&gt;作为一个有信仰的人 当然在哪都要用Arch vps也是 然而大部分vps提供商都不会有Arch这种“不稳定”的系统供我们选择 这怎么能忍
 于是我找啊找 没想到真找到了办法&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/drizzt/vps2arch&#34;&gt;https://github.com/drizzt/vps2arch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/drizzt/vps2arch&#34; target=&#34;_blank&#34;&gt;https://github.com/drizzt/vps2arch&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;就是它 使用方法很简单&lt;/p&gt;
 
@@ -289,7 +289,7 @@ su
 
 &lt;p&gt;PS:
     1. 不保证一切顺利
-    2. 这是一份测试过的vps的列表 &lt;a href=&#34;https://github.com/drizzt/vps2arch/wiki/Tested-VPS-Providers&#34;&gt;这里&lt;/a&gt; 我在CheapVZ的vps里也测试过了
+    2. 这是一份测试过的vps的列表 &lt;a href=&#34;https://github.com/drizzt/vps2arch/wiki/Tested-VPS-Providers&#34; target=&#34;_blank&#34;&gt;这里&lt;/a&gt; 我在CheapVZ的vps里也测试过了
     3. ipv6暂时还不能自动配置 有需要的请手动配置
     4. base-devel组不会自动安装 需要自己装
     5. 觉得棒的话 可以考虑捐助作者
