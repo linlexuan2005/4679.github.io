@@ -17,7 +17,7 @@
       <guid>https://libnull.com/new-image-host/</guid>
       <description>&lt;p&gt;我在看了V2EX上的&lt;a href=&#34;https://www.v2ex.com/t/269463&#34; target=&#34;_blank&#34;&gt;这个帖子&lt;/a&gt;之后 我慌了 万一哪天有人来刷我怎么办&lt;/p&gt;
 
-&lt;p&gt;于是 &lt;a href=&#34;https://img.libnull.space&#34; target=&#34;_blank&#34;&gt;我给自己搭了个图床&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;于是 &lt;a href=&#34;https://img.libnull.com&#34; target=&#34;_blank&#34;&gt;我给自己搭了个图床&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;搭在OpenShift上 走Kloudsec CDN 有1G空间 也够我用了&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;你们现在看到的服务器信息应该是这样&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://img.libnull.space/uploads/big/dc4402bbf7ad25086399c1088358bc65.jpg&#34; alt=&#34;info&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.libnull.com/uploads/big/dc4402bbf7ad25086399c1088358bc65.jpg&#34; alt=&#34;info&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是我用的服务端 &lt;a href=&#34;https://aur.archlinux.org/packages/nginx-mainline-mod4679/&#34; target=&#34;_blank&#34;&gt;nginx-mainline-mod4679&lt;/a&gt;&lt;/p&gt;
 
