@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Me on 4679&#39;s Blog</title>
-    <link>https://4679.space/tags/me/</link>
+    <link>https://libnull.com/tags/me/</link>
     <description>Recent content in Me on 4679&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 02 Dec 2015 00:12:01 +0800</lastBuildDate>
-    <atom:link href="https://4679.space/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://libnull.com/tags/me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>祝自己生日快乐</title>
-      <link>https://4679.space/birthday/</link>
+      <link>https://libnull.com/birthday/</link>
       <pubDate>Wed, 02 Dec 2015 00:12:01 +0800</pubDate>
       
-      <guid>https://4679.space/birthday/</guid>
+      <guid>https://libnull.com/birthday/</guid>
       <description>&lt;p&gt;就十七岁了 时间过得真快&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>朋友们</title>
-      <link>https://4679.space/friends/</link>
+      <link>https://libnull.com/friends/</link>
       <pubDate>Fri, 06 Nov 2015 15:57:30 +0800</pubDate>
       
-      <guid>https://4679.space/friends/</guid>
+      <guid>https://libnull.com/friends/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;友链(排名不分先后)
 
