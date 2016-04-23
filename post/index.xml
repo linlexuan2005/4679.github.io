@@ -209,6 +209,9 @@
       <guid>https://libnull.com/oh-my-termux/</guid>
       <description>&lt;p&gt;Termux是安卓上的一款软件 能提供一个差不多能用的linux环境 值得一提的是 它带有包管理器apt 常用的软件包差不多都有
 我写了个快速配置Termux的脚本 &lt;a href=&#34;https://github.com/4679/oh-my-termux&#34; target=&#34;_blank&#34;&gt;oh-my-termux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;github-card&#34; data-github=&#34;4679/oh-my-termux&#34; data-width=&#34;400&#34; data-height=&#34;&#34; data-theme=&#34;default&#34;&gt;&lt;/div&gt;
+&lt;script src=&#34;//cdn.jsdelivr.net/github-cards/latest/widget.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -259,9 +262,6 @@
       <guid>https://libnull.com/vimrc/</guid>
       <description>
 
-&lt;p&gt;&lt;div class=&#34;github-card&#34; data-github=&#34;4679/vimrc&#34; data-width=&#34;400&#34; data-height=&#34;150&#34; data-theme=&#34;default&#34;&gt;&lt;/div&gt;
-&lt;script src=&#34;//cdn.jsdelivr.net/github-cards/latest/widget.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
 &lt;p&gt;用心感受&lt;/p&gt;
 
 &lt;p&gt;如丝般顺滑 开箱即用 遵循KISS原则&lt;/p&gt;
@@ -269,6 +269,9 @@
 &lt;h1 id=&#34;2016-01-07&#34;&gt;2016-01-07&lt;/h1&gt;
 
 &lt;p&gt;更新了 这次绝对不坑爹&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;github-card&#34; data-github=&#34;4679/vimrc&#34; data-width=&#34;400&#34; data-height=&#34;150&#34; data-theme=&#34;default&#34;&gt;&lt;/div&gt;
+&lt;script src=&#34;//cdn.jsdelivr.net/github-cards/latest/widget.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
     </item>
     
