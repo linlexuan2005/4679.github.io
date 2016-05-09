@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>null</title>
+    <title>Nothing Here</title>
     <link>https://libnull.com/</link>
-    <description>Recent content on null</description>
+    <description>Recent content on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 23 Apr 2016 23:04:03 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/index.xml" rel="self" type="application/rss+xml" />
     
