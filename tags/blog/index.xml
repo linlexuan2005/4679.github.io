@@ -28,7 +28,7 @@
 
 &lt;p&gt;用的&lt;a href=&#34;https://rage4.com/&#34; target=&#34;_blank&#34;&gt;Rage4&lt;/a&gt;的服务，各位也可以试试&lt;/p&gt;
 
-&lt;h4 id=&#34;启用了dnssec自己dane&#34;&gt;启用了DNSSEC自己DANE&lt;/h4&gt;
+&lt;h4 id=&#34;启用了dnssec以及dane&#34;&gt;启用了DNSSEC以及DANE&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0060lm7Tgw1f4eka1287aj30fn07it96.jpg&#34; alt=&#34;DNSSEC&#34; /&gt;
 &lt;img src=&#34;https://ws4.sinaimg.cn/large/0060lm7Tgw1f4ekar5tpej30ep07umy6.jpg&#34; alt=&#34;DANE&#34; /&gt;
