@@ -6,8 +6,44 @@
     <description>Recent content on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 23 Apr 2016 23:04:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客最近的一些变化</title>
+      <link>https://libnull.com/recently-changes/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://libnull.com/recently-changes/</guid>
+      <description>
+
+&lt;h4 id=&#34;首先-服务器从香港主机迁回digitalocean旧金山机房&#34;&gt;首先，服务器从香港主机迁回DigitalOcean旧金山机房。&lt;/h4&gt;
+
+&lt;p&gt;虚拟主机毕竟不能折腾，连HSTS都没法开，反正从vps加载的就是几KB大的html文件，应该不会慢到哪去。&lt;/p&gt;
+
+&lt;h4 id=&#34;设置了自定义nameserver&#34;&gt;设置了自定义Nameserver&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ek5xnyz6j30k00d5gnk.jpg&#34; alt=&#34;Vanity NS&#34; /&gt;
+作用就是装X😊&lt;/p&gt;
+
+&lt;p&gt;用的&lt;a href=&#34;https://rage4.com/&#34; target=&#34;_blank&#34;&gt;Rage4&lt;/a&gt;的服务，各位也可以试试&lt;/p&gt;
+
+&lt;h4 id=&#34;启用了dnssec自己dane&#34;&gt;启用了DNSSEC自己DANE&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0060lm7Tgw1f4eka1287aj30fn07it96.jpg&#34; alt=&#34;DNSSEC&#34; /&gt;
+&lt;img src=&#34;https://ws4.sinaimg.cn/large/0060lm7Tgw1f4ekar5tpej30ep07umy6.jpg&#34; alt=&#34;DANE&#34; /&gt;
+除了装X也没什么用|∀ﾟ&lt;/p&gt;
+
+&lt;h4 id=&#34;http-security-report达到98分&#34;&gt;HTTP Security Report达到98分&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ekdj9rsrj318g0p016b.jpg&#34; alt=&#34;HTTP Security Report&#34; /&gt;
+等HSTS Preload审核通过就100分了(｀･ω･)&lt;/p&gt;
+
+&lt;p&gt;这个大家有兴趣的话，等我考完写个教程&lt;/p&gt;
+
+&lt;p&gt;PS: 这篇文章用的微博图床 大家觉得怎样&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>从vim转到neovim</title>
@@ -326,100 +362,6 @@
 &lt;li&gt;邮箱 4679kun@outlook.com&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>利用sslh在同一个端口运行nginx openvpn xmpp ssh等服务</title>
-      <link>https://libnull.com/sslh/</link>
-      <pubDate>Wed, 16 Dec 2015 21:29:18 +0800</pubDate>
-      
-      <guid>https://libnull.com/sslh/</guid>
-      <description>&lt;p&gt;这有什么用呢？ 某些运营商或者学校可能屏蔽了一些服务的默认端口 比如屏蔽了22端口 你就只能把ssh的监听端口改成其他的 要是更变态 开启了白名单模式呢 那样就只能通过某些端口访问了 443就是其中一个 正常人一般不会屏蔽它 但是如果通过22端口访问vps的话 启用了TLS的http服务器怎么办呢 这时候就要用到sslh了
-  sslh的原理很简单 通过分析数据包的特征辨别是什么协议的访问 把对同一端口不同协议的访问分流到不同的端口上&lt;/p&gt;
-
-&lt;p&gt;首先是安装
-对于Archlinux用户&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;yaourt -S sslh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通用方法 (我没测试)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#首先安装依赖
-#Debian
-apt-get install -y libwrap0-dev libconfig8-dev
-#RPM系
-yum install libconfig libconfig-devel
-
-#获取源码
-git clone https://github.com/yrutschle/sslh
-cd sslh
-
-#编译
-make
-
-#安装（Debian）
-make install
-cp scripts/etc.init.d.sslh /etc/init.d/sslh
-update-rc.d sslh defaults
-
-#安装（CentOS）
-make install
-cp scripts/etc.rc.d.init.d.sslh.centos /etc/rc.d/init.d/sslh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;之后修改位于/etc/sslh.conf或者/etc/sslh.cfg的配置文件
-以下是我的 也是Arch的默认配置&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cfg&#34;&gt;# Default Arch configuration
-# You can find more examples in /usr/share/doc/sslh
-
-verbose: false;
-foreground: true;
-inetd: false;
-numeric: false;
-transparent: false;
-timeout: 2;
-user: &amp;quot;sslh&amp;quot;;
-pidfile: &amp;quot;/run/sslh.pid&amp;quot;;
-
-
-listen:
-(
-    { host: &amp;quot;::0&amp;quot;; port: &amp;quot;443&amp;quot;; }
-);
-
-protocols:
-(
-     { name: &amp;quot;ssh&amp;quot;; service: &amp;quot;ssh&amp;quot;; host: &amp;quot;localhost&amp;quot;; port: &amp;quot;22&amp;quot;; probe: &amp;quot;builtin&amp;quot;; },
-     { name: &amp;quot;http&amp;quot;; host: &amp;quot;localhost&amp;quot;; port: &amp;quot;80&amp;quot;; probe: &amp;quot;builtin&amp;quot;; },     { name: &amp;quot;ssl&amp;quot;; host: &amp;quot;localhost&amp;quot;; port: &amp;quot;8443&amp;quot;; probe: &amp;quot;builtin&amp;quot;; },
-     { name: &amp;quot;anyprot&amp;quot;; host: &amp;quot;localhost&amp;quot;; port: &amp;quot;8443&amp;quot;; probe: &amp;quot;builtin&amp;quot;; }
-);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后 把占用了443端口的服务的监听端口改到8443 或者配置文件里定义的地址&lt;/p&gt;
-
-&lt;p&gt;然后启动sslh&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#Archlinux
-systemctl start sslh-fork
-
-#Debian
-service sslh start
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最后测试一下通过443端口来进行ssh连接&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ssh 127.0.0.1 -p 443
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;没问题的话就成功了&lt;/p&gt;
-
-&lt;p&gt;之后就可以禁止从外网访问22端口来提高安全性啦
-标题中的openvpn xmpp也可以 按照格式添加进配置文件就行&lt;/p&gt;
-
-&lt;p&gt;PS:我一开始其实在想 shadowsocks能不能用 后来想到 shadowsocks能不被gfw封杀 其中一个原因不就是因为没有流量特征吗 所以sslh是不能识别ss的流量的&lt;/p&gt;
 </description>
     </item>
     

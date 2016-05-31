@@ -6,8 +6,44 @@
     <description>Recent content in Posts on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 23 Apr 2016 23:04:03 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客最近的一些变化</title>
+      <link>https://libnull.com/recently-changes/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://libnull.com/recently-changes/</guid>
+      <description>
+
+&lt;h4 id=&#34;首先-服务器从香港主机迁回digitalocean旧金山机房&#34;&gt;首先，服务器从香港主机迁回DigitalOcean旧金山机房。&lt;/h4&gt;
+
+&lt;p&gt;虚拟主机毕竟不能折腾，连HSTS都没法开，反正从vps加载的就是几KB大的html文件，应该不会慢到哪去。&lt;/p&gt;
+
+&lt;h4 id=&#34;设置了自定义nameserver&#34;&gt;设置了自定义Nameserver&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ek5xnyz6j30k00d5gnk.jpg&#34; alt=&#34;Vanity NS&#34; /&gt;
+作用就是装X😊&lt;/p&gt;
+
+&lt;p&gt;用的&lt;a href=&#34;https://rage4.com/&#34; target=&#34;_blank&#34;&gt;Rage4&lt;/a&gt;的服务，各位也可以试试&lt;/p&gt;
+
+&lt;h4 id=&#34;启用了dnssec自己dane&#34;&gt;启用了DNSSEC自己DANE&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0060lm7Tgw1f4eka1287aj30fn07it96.jpg&#34; alt=&#34;DNSSEC&#34; /&gt;
+&lt;img src=&#34;https://ws4.sinaimg.cn/large/0060lm7Tgw1f4ekar5tpej30ep07umy6.jpg&#34; alt=&#34;DANE&#34; /&gt;
+除了装X也没什么用|∀ﾟ&lt;/p&gt;
+
+&lt;h4 id=&#34;http-security-report达到98分&#34;&gt;HTTP Security Report达到98分&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ekdj9rsrj318g0p016b.jpg&#34; alt=&#34;HTTP Security Report&#34; /&gt;
+等HSTS Preload审核通过就100分了(｀･ω･)&lt;/p&gt;
+
+&lt;p&gt;这个大家有兴趣的话，等我考完写个教程&lt;/p&gt;
+
+&lt;p&gt;PS: 这篇文章用的微博图床 大家觉得怎样&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>从vim转到neovim</title>
@@ -402,66 +438,6 @@ service sslh start
 标题中的openvpn xmpp也可以 按照格式添加进配置文件就行&lt;/p&gt;
 
 &lt;p&gt;PS:我一开始其实在想 shadowsocks能不能用 后来想到 shadowsocks能不被gfw封杀 其中一个原因不就是因为没有流量特征吗 所以sslh是不能识别ss的流量的&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>用阿里云的免费主机转发任意端口</title>
-      <link>https://libnull.com/port-forwarding/</link>
-      <pubDate>Wed, 09 Dec 2015 18:51:30 +0800</pubDate>
-      
-      <guid>https://libnull.com/port-forwarding/</guid>
-      <description>&lt;p&gt;上次用了阿里云的免费主机转发了SS 其实转发任何端口都是可以的 这次就以SSH的默认端口22来做示范&lt;/p&gt;
-
-&lt;p&gt;首先 来到TAE的控制台
-&lt;img src=&#34;https://dn-4679kun.qbox.me/pic/port-forwarding/1.jpg&#34; alt=&#34;1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;点击配置管理
-&lt;img src=&#34;https://dn-4679kun.qbox.me/pic/port-forwarding/2.jpg&#34; alt=&#34;2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;添加一个端口 最好访问端口和监听端口保持一致 然后记住它 （别用22 因为已经被占用了） 会提示重启 报错也没关系 手动点击重启就行&lt;/p&gt;
-
-&lt;p&gt;之后进入WebSSH&lt;/p&gt;
-
-&lt;p&gt;我们用到的软件是rinetd 简单好用&lt;/p&gt;
-
-&lt;p&gt;首先安装一个screen 这样才能保证WebSSH关闭之后rinetd的进程不被杀死&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;yum install screen
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后下载解压编译rinetd&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget http://www.boutell.com/rinetd/http/rinetd.tar.gz
-tar zxvf rinetd.tar.gz
-cd rinetd
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;编辑配置文件&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;vim /etc/rinetd.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;vim的用法我就不说了 网上都有&lt;/p&gt;
-
-&lt;p&gt;填入&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cfg&#34;&gt;0.0.0.0 刚才添加的端口号 VPS的IP 22
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后开启screen 启动rinetd&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;screen
-rinetd -c /etc/rinetd.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样就完成了 ssh连接vps的时候 IP和端口都用刚才才在配置管理里面看到的就行&lt;/p&gt;
-
-&lt;p&gt;重启之后 之前开启的SS转发也被关了 再开启一遍就行&lt;/p&gt;
-
-&lt;p&gt;这个方法可以用于转发任何端口&lt;/p&gt;
 </description>
     </item>
     

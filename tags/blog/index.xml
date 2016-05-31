@@ -6,8 +6,44 @@
     <description>Recent content in Blog on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 12 Apr 2016 15:21:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客最近的一些变化</title>
+      <link>https://libnull.com/recently-changes/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://libnull.com/recently-changes/</guid>
+      <description>
+
+&lt;h4 id=&#34;首先-服务器从香港主机迁回digitalocean旧金山机房&#34;&gt;首先，服务器从香港主机迁回DigitalOcean旧金山机房。&lt;/h4&gt;
+
+&lt;p&gt;虚拟主机毕竟不能折腾，连HSTS都没法开，反正从vps加载的就是几KB大的html文件，应该不会慢到哪去。&lt;/p&gt;
+
+&lt;h4 id=&#34;设置了自定义nameserver&#34;&gt;设置了自定义Nameserver&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ek5xnyz6j30k00d5gnk.jpg&#34; alt=&#34;Vanity NS&#34; /&gt;
+作用就是装X😊&lt;/p&gt;
+
+&lt;p&gt;用的&lt;a href=&#34;https://rage4.com/&#34; target=&#34;_blank&#34;&gt;Rage4&lt;/a&gt;的服务，各位也可以试试&lt;/p&gt;
+
+&lt;h4 id=&#34;启用了dnssec自己dane&#34;&gt;启用了DNSSEC自己DANE&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws1.sinaimg.cn/large/0060lm7Tgw1f4eka1287aj30fn07it96.jpg&#34; alt=&#34;DNSSEC&#34; /&gt;
+&lt;img src=&#34;https://ws4.sinaimg.cn/large/0060lm7Tgw1f4ekar5tpej30ep07umy6.jpg&#34; alt=&#34;DANE&#34; /&gt;
+除了装X也没什么用|∀ﾟ&lt;/p&gt;
+
+&lt;h4 id=&#34;http-security-report达到98分&#34;&gt;HTTP Security Report达到98分&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ws2.sinaimg.cn/large/0060lm7Tgw1f4ekdj9rsrj318g0p016b.jpg&#34; alt=&#34;HTTP Security Report&#34; /&gt;
+等HSTS Preload审核通过就100分了(｀･ω･)&lt;/p&gt;
+
+&lt;p&gt;这个大家有兴趣的话，等我考完写个教程&lt;/p&gt;
+
+&lt;p&gt;PS: 这篇文章用的微博图床 大家觉得怎样&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>弄了个新图床</title>
