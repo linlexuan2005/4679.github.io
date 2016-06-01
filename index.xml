@@ -363,7 +363,10 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;dig +dnssec +short @1.2.4.8 mail.libnull.com TXT | head -n 1
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#Unix-like:
+dig +dnssec +short @1.2.4.8 mail.libnull.com TXT | head -n 1
+#Windows:
+nslookup -querytype=txt mail.libnull.com 1.2.4.8
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

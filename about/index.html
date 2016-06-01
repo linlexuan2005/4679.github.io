@@ -76,7 +76,10 @@
 </ul></li>
 </ul>
 
-<pre><code>dig +dnssec +short @1.2.4.8 mail.libnull.com TXT | head -n 1
+<pre><code class="language-bash">#Unix-like:
+dig +dnssec +short @1.2.4.8 mail.libnull.com TXT | head -n 1
+#Windows:
+nslookup -querytype=txt mail.libnull.com 1.2.4.8
 </code></pre>
 
       
