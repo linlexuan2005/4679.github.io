@@ -6,8 +6,20 @@
     <description>Recent content in Blog on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2016 19:20:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客迁移到EC2东京机房</title>
+      <link>https://libnull.com/move-to-aws-ec2-tokyo/</link>
+      <pubDate>Thu, 18 Aug 2016 19:20:00 +0800</pubDate>
+      
+      <guid>https://libnull.com/move-to-aws-ec2-tokyo/</guid>
+      <description>&lt;p&gt;成年了，通过了全球付实名认证，于是充了20块，去试了试绑定AWS，结果成功了，于是就把博客搬过来咯。&lt;/p&gt;
+
+&lt;p&gt;虽说限额很小，不过放个静态博客应该不是问题。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>博客最近的一些变化</title>

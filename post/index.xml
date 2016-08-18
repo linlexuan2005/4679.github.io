@@ -6,8 +6,20 @@
     <description>Recent content in Posts on Nothing Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 17 Jul 2016 20:50:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2016 19:20:00 +0800</lastBuildDate>
     <atom:link href="https://libnull.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客迁移到EC2东京机房</title>
+      <link>https://libnull.com/move-to-aws-ec2-tokyo/</link>
+      <pubDate>Thu, 18 Aug 2016 19:20:00 +0800</pubDate>
+      
+      <guid>https://libnull.com/move-to-aws-ec2-tokyo/</guid>
+      <description>&lt;p&gt;成年了，通过了全球付实名认证，于是充了20块，去试了试绑定AWS，结果成功了，于是就把博客搬过来咯。&lt;/p&gt;
+
+&lt;p&gt;虽说限额很小，不过放个静态博客应该不是问题。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>诈个尸，说下近况</title>
@@ -334,36 +346,6 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;原理就是 这个值控制空间不足多少时提示空间不足 默认是10 也就是空间不足10%的时候提示 把它修改成0 就没有提示了&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>一份简洁 优雅的vim配置</title>
-      <link>https://libnull.com/vimrc/</link>
-      <pubDate>Mon, 21 Dec 2015 19:16:05 +0800</pubDate>
-      
-      <guid>https://libnull.com/vimrc/</guid>
-      <description>
-
-&lt;p&gt;用心感受&lt;/p&gt;
-
-&lt;p&gt;如丝般顺滑 开箱即用 遵循KISS原则&lt;/p&gt;
-
-&lt;h1 id=&#34;2016-01-07&#34;&gt;2016-01-07&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;更新了 这次绝对不坑爹&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;2016-04-24&#34;&gt;2016-04-24&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;把vundle换成了vim-plug&lt;/li&gt;
-&lt;li&gt;优化了安装脚本&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;div class=&#34;github-card&#34; data-github=&#34;4679/vimrc&#34; data-width=&#34;400&#34; data-height=&#34;150&#34; data-theme=&#34;default&#34;&gt;&lt;/div&gt;
-&lt;script src=&#34;//cdn.jsdelivr.net/github-cards/latest/widget.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
     </item>
     
